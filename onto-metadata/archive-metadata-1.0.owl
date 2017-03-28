@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vocab.dhlab.epfl.ch/vtm-archive#"
+     xml:base="http://vocab.dhlab.epfl.ch/vtm-archive"
+     xmlns:vtm-arch="http://vocab.dhlab.epfl.ch/vtm-archive/1.0#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata">
+        <owl:versionIRI rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata/1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#hasArchivalSignature -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#hasArchivalSignature"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#hasPage -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#hasPage"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#isImageOf -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#isImageOf"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#isImagedBy -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#isImagedBy"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#isPageOf -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#isPageOf"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#onPage -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#onPage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#archivalHolder -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#archivalHolder"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#box -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#box"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#fund -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#fund"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#number -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#number">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#pageSide -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#pageSide"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#series -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#series"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalHolder -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalHolder">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalSignature -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalSignature"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalSignatureComponent -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalSignatureComponent"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#Box -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Box">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#Fund -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Fund">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#Page -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Page">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#Register -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Register">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#Serie -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Serie">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

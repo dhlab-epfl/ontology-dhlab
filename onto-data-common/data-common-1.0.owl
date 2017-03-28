@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vocab.dhlab.epfl.ch/data-common#"
+     xml:base="http://vocab.dhlab.epfl.ch/data-common"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:data-common="http://vocab.dhlab.epfl.ch/data-common#">
+    <owl:Ontology rdf:about="http://vocab.dhlab.epfl.ch/data-common">
+        <owl:versionIRI rdf:resource="http://vocab.dhlab.epfl.ch/data-common/1.0"/>
+        <owl:imports rdf:resource="http://vocab.dhlab.epfl.ch/data-core/1.0"/>
+        <rdfs:comment xml:lang="en">This ontology focuses on formalizing the common elements used in different chapters of the Venice time machine project. This is a very first version and work in progress.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#iiifUrl -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#iiifUrl"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#inParish -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#inParish"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#inSestiere -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#inSestiere"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#viewerUrl -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#viewerUrl">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#certainty -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#certainty"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#duration"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#standardForm -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#standardForm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#transcript -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#transcript">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#uuid -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#uuid">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#Parish -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-common#Parish">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#Person -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-common#Person">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#PersonMention -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-common#PersonMention">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#Place -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-common#Place">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#PlaceMention -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-common#PlaceMention">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#Sestiere -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-common#Sestiere">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-core#Entity -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-core#Mention -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
