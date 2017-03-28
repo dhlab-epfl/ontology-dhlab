@@ -16,4 +16,4 @@ Work is on-going.
 
 Vocabularies are kept simple and will be/are used in conjonction with other established vocabularies (e.g. the [Knowledge store core data model](https://knowledgestore.fbk.eu/ontologies/knowledgestore.html#Entity), the [Simple Event Model](http://semanticweb.cs.vu.nl/2009/11/sem/), [CIDOC-CRM](http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html), or [Records in Context](http://www.ica.org/en/egad-ric-conceptual-model)) when representing data. 
 
-Documentation, evaluation and publication are automatically handled via [OnToology](http://ontoology.linkeddata.es/about).
+Documentation, evaluation and publication are automatically handled by the [OnToology](http://ontoology.linkeddata.es/about) framework.
