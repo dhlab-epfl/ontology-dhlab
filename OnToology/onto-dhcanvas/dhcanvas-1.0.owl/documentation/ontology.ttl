@@ -1,0 +1,33 @@
+@prefix :        <http://vocab.dhlab.epfl.ch/dhcanvas#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:isAnnotated
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Segment ;
+      rdfs:range xsd:boolean .
+
+:thumbnail
+      a       owl:DatatypeProperty .
+
+:uuid
+      a       owl:DatatypeProperty .
+
+:pageCount
+      a       owl:DatatypeProperty .
+
+:y    a       owl:DatatypeProperty .
+
+:Segment
+      a       owl:Class .
+
+:hasBoundingBox
+      a       owl:ObjectProperty .
+
+:x    a       owl:DatatypeProperty .
+
+<http://vocab.dhlab.epfl.ch/dhcanvas>
+      a       owl:Ontology ;
+      owl:versionIRI <http://vocab.dhlab.epfl.ch/dhcanvas/1.0> .

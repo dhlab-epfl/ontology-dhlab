@@ -1,0 +1,30 @@
+{
+  "@context" : {
+    "hasBoundingBox" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/dhcanvas#hasBoundingBox",
+      "@type" : "@id"
+    },
+    "x" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/dhcanvas#x"
+    },
+    "isAnnotated" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/dhcanvas#isAnnotated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "y" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/dhcanvas#y"
+    },
+    "pageCount" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/dhcanvas#pageCount"
+    },
+    "uuid" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/dhcanvas#uuid"
+    },
+    "thumbnail" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/dhcanvas#thumbnail"
+    },
+    "Segment" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/dhcanvas#Segment"
+    }
+  }
+}

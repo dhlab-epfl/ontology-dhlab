@@ -1,0 +1,297 @@
+<h2  id="crossreference" class="list">Cross reference for data-core classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by data-core.
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Entity" title="http://vocab.dhlab.epfl.ch/data-core#Entity">
+            <span>entity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Mention" title="http://vocab.dhlab.epfl.ch/data-core#Mention">
+            <span>mention</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Source" title="http://vocab.dhlab.epfl.ch/data-core#Source">
+            <span>source</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="Entity">
+      <h3>entity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/data-core#Entity</p>
+      <div class="comment">
+         <span class="markdown">Cf. Knowledge store definition "Any identifiable entity in the domain of discourse, extracted from text and/or imported from some source of background knowledge."</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#referredBy" title="http://vocab.dhlab.epfl.ch/data-core#referredBy">referred by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#refersTo" title="http://vocab.dhlab.epfl.ch/data-core#refersTo">refers to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Mention">
+      <h3>mention<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/data-core#Mention</p>
+      <div class="comment">
+         <span class="markdown">Fragment of an information object (source) which refer to an entity.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isMentionedIn"
+               title="http://vocab.dhlab.epfl.ch/data-core#isMentionedIn">is mentioned in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#refersTo" title="http://vocab.dhlab.epfl.ch/data-core#refersTo">refers to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMention" title="http://vocab.dhlab.epfl.ch/data-core#hasMention">has mention</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#referredBy" title="http://vocab.dhlab.epfl.ch/data-core#referredBy">referred by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Source">
+      <h3>source<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/data-core#Source</p>
+      <div class="comment">
+         <span class="markdown">An information object with a digital representation.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasMention" title="http://vocab.dhlab.epfl.ch/data-core#hasMention">has mention</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isMentionedIn"
+               title="http://vocab.dhlab.epfl.ch/data-core#isMentionedIn">is mentioned in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasComponent" title="http://vocab.dhlab.epfl.ch/data-core#hasComponent">
+            <span>has component</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasMention" title="http://vocab.dhlab.epfl.ch/data-core#hasMention">
+            <span>has mention</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isComponentOf"
+            title="http://vocab.dhlab.epfl.ch/data-core#isComponentOf">
+            <span>is component of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isMentionedIn"
+            title="http://vocab.dhlab.epfl.ch/data-core#isMentionedIn">
+            <span>is mentioned in</span>
+         </a>
+      </li>
+      <li>
+         <a href="#referredBy" title="http://vocab.dhlab.epfl.ch/data-core#referredBy">
+            <span>referred by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#refersTo" title="http://vocab.dhlab.epfl.ch/data-core#refersTo">
+            <span>refers to</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="hasComponent">
+      <h3>has component<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/data-core#hasComponent</p>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>http://vocab.dhlab.epfl.ch/data-core</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isComponentOf"
+                  title="http://vocab.dhlab.epfl.ch/data-core#isComponentOf">is component of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMention">
+      <h3>has mention<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/data-core#hasMention</p>
+      <div class="comment">
+         <span class="markdown">This property indicates the mention which occur in a source.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Source" title="http://vocab.dhlab.epfl.ch/data-core#Source">source</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Mention" title="http://vocab.dhlab.epfl.ch/data-core#Mention">mention</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isMentionedIn"
+                  title="http://vocab.dhlab.epfl.ch/data-core#isMentionedIn">is mentioned in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isComponentOf">
+      <h3>is component of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/data-core#isComponentOf</p>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>http://vocab.dhlab.epfl.ch/data-core</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasComponent" title="http://vocab.dhlab.epfl.ch/data-core#hasComponent">has component</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isMentionedIn">
+      <h3>is mentioned in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/data-core#isMentionedIn</p>
+      <div class="comment">
+         <span class="markdown">Tjis property indicates the source were a mention occurs.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Mention" title="http://vocab.dhlab.epfl.ch/data-core#Mention">mention</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Source" title="http://vocab.dhlab.epfl.ch/data-core#Source">source</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasMention" title="http://vocab.dhlab.epfl.ch/data-core#hasMention">has mention</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="referredBy">
+      <h3>referred by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/data-core#referredBy</p>
+      <div class="comment">
+         <span class="markdown">This property indicates the mention an entity is referred by.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Entity" title="http://vocab.dhlab.epfl.ch/data-core#Entity">entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Mention" title="http://vocab.dhlab.epfl.ch/data-core#Mention">mention</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#refersTo" title="http://vocab.dhlab.epfl.ch/data-core#refersTo">refers to</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="refersTo">
+      <h3>refers to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/data-core#refersTo</p>
+      <div class="comment">
+         <span class="markdown">This property indicates the entity a mention refers to.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Mention" title="http://vocab.dhlab.epfl.ch/data-core#Mention">mention</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Entity" title="http://vocab.dhlab.epfl.ch/data-core#Entity">entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#referredBy" title="http://vocab.dhlab.epfl.ch/data-core#referredBy">referred by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,33 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "grz:CurrencyType" "grz:ChargeMention" "grz:Charge" "grz:RoleType" "grz:Profession" "grz:Patronymic1" "grz:FinancialConditionType" "grz:ContractMention" "grz:ProfessionMention" "grz:ConditionType" "grz:Workshop" "grz:Type" "grz:PeriodizationType" "grz:Nickname" "grz:WorkshopMention" "grz:EventMention" "grz:Surname" "grz:AppellationComponent" "grz:ApplicationRule" "grz:Collectivename" "grz:EventType" "grz:Contract" "grz:HostingCondition" "grz:FinancialCondition" "grz:Condition" "grz:HostingConditionType" "grz:PayerType" "grz:Forename" "grz:PlaceType" "grz:Patronymic2" ; /*classes style*/
+	"grz:FinancialConditionType" -> "grz:ConditionType" [ label = "rdfs:subClassOf" ];
+	"grz:Nickname" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:Contract" -> "data-core:Source" [ label = "rdfs:subClassOf" ];
+	"grz:Profession" -> "data-core:Entity" [ label = "rdfs:subClassOf" ];
+	"grz:Collectivename" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:WorkshopMention" -> "data-core:Mention" [ label = "rdfs:subClassOf" ];
+	"grz:HostingConditionType" -> "grz:ConditionType" [ label = "rdfs:subClassOf" ];
+	"grz:FinancialCondition" -> "grz:Condition" [ label = "rdfs:subClassOf" ];
+	"grz:EventType" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:PayerType" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:RoleType" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:CurrencyType" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:Surname" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:PeriodizationType" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:Charge" -> "data-core:Entity" [ label = "rdfs:subClassOf" ];
+	"grz:Patronymic2" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:EventMention" -> "data-core:Mention" [ label = "rdfs:subClassOf" ];
+	"grz:ApplicationRule" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:ContractMention" -> "data-core:Mention" [ label = "rdfs:subClassOf" ];
+	"grz:ConditionType" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:Forename" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:ChargeMention" -> "data-core:Mention" [ label = "rdfs:subClassOf" ];
+	"grz:Patronymic1" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:HostingCondition" -> "grz:Condition" [ label = "rdfs:subClassOf" ];
+	"grz:ProfessionMention" -> "data-core:Mention" [ label = "rdfs:subClassOf" ];
+	"grz:PlaceType" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:Workshop" -> "data-core:Entity" [ label = "rdfs:subClassOf" ];
+
+}
