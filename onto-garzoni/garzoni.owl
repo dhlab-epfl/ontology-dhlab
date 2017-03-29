@@ -157,7 +157,10 @@
 
     <!-- http://vocab.dhlab.epfl.ch/garzoni#isNextPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/garzoni#isNextPartOf"/>
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/garzoni#isNextPartOf">
+        <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Contract"/>
+        <rdfs:range rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Contract"/>
+    </owl:ObjectProperty>
     
 
 
