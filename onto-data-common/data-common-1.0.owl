@@ -111,6 +111,14 @@
     
 
 
+    <!-- http://vocab.dhlab.epfl.ch/data-common#EventMention -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-common#EventMention">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+    </owl:Class>
+    
+
+
     <!-- http://vocab.dhlab.epfl.ch/data-common#Parish -->
 
     <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-common#Parish">
