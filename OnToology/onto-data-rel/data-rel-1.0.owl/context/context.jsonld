@@ -1,0 +1,208 @@
+{
+  "@context" : {
+    "familyRelation" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#familyRelation",
+      "@type" : "@id"
+    },
+    "isGuarantorOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGuarantorOf",
+      "@type" : "@id"
+    },
+    "hasGuarantor" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#hasGuarantor",
+      "@type" : "@id"
+    },
+    "isDaughterOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isDaughterOf",
+      "@type" : "@id"
+    },
+    "isStepfatherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isStepfatherOf",
+      "@type" : "@id"
+    },
+    "isCousinOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isCousinOf",
+      "@type" : "@id"
+    },
+    "isGreatGrandchildOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGreatGrandchildOf",
+      "@type" : "@id"
+    },
+    "hasBusinessWith" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#hasBusinessWith",
+      "@type" : "@id"
+    },
+    "isGrandfatherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGrandfatherOf",
+      "@type" : "@id"
+    },
+    "isFamilyOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isFamilyOf",
+      "@type" : "@id"
+    },
+    "isNephewOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isNephewOf",
+      "@type" : "@id"
+    },
+    "isGreatGrandsonOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGreatGrandsonOf",
+      "@type" : "@id"
+    },
+    "isBrotherInLawOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isBrotherInLawOf",
+      "@type" : "@id"
+    },
+    "isWifeOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isWifeOf",
+      "@type" : "@id"
+    },
+    "isStepsonOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isStepsonOf",
+      "@type" : "@id"
+    },
+    "isAdoptedBy" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isAdoptedBy",
+      "@type" : "@id"
+    },
+    "isGodfatherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGodfatherOf",
+      "@type" : "@id"
+    },
+    "isAdopterOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isAdopterOf",
+      "@type" : "@id"
+    },
+    "isBrotherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isBrotherOf",
+      "@type" : "@id"
+    },
+    "isFatherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isFatherOf",
+      "@type" : "@id"
+    },
+    "isHeirOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isHeirOf",
+      "@type" : "@id"
+    },
+    "isGreatGrandfatherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGreatGrandfatherOf",
+      "@type" : "@id"
+    },
+    "isGreatGrandmotherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGreatGrandmotherOf",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "isAuntOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isAuntOf",
+      "@type" : "@id"
+    },
+    "businessRelation" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#businessRelation",
+      "@type" : "@id"
+    },
+    "isSonInLawOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isSonInLawOf",
+      "@type" : "@id"
+    },
+    "isGranddaughterOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGranddaughterOf",
+      "@type" : "@id"
+    },
+    "isUncleOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isUncleOf",
+      "@type" : "@id"
+    },
+    "isFatherInLawOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isFatherInLawOf",
+      "@type" : "@id"
+    },
+    "isApprenticeOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isApprenticeOf",
+      "@type" : "@id"
+    },
+    "isGreatGranddaughterOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGreatGranddaughterOf",
+      "@type" : "@id"
+    },
+    "hasApprentice" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#hasApprentice",
+      "@type" : "@id"
+    },
+    "isGodmotherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGodmotherOf",
+      "@type" : "@id"
+    },
+    "isGrandmotherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGrandmotherOf",
+      "@type" : "@id"
+    },
+    "isPartnerOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isPartnerOf",
+      "@type" : "@id"
+    },
+    "genericReference" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#genericReference",
+      "@type" : "@id"
+    },
+    "hasFamilyLinkWith" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#hasFamilyLinkWith",
+      "@type" : "@id"
+    },
+    "isColleagueOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isColleagueOf",
+      "@type" : "@id"
+    },
+    "isSisterInLawOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isSisterInLawOf",
+      "@type" : "@id"
+    },
+    "relationProperties" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#relationProperties",
+      "@type" : "@id"
+    },
+    "isMotherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isMotherOf",
+      "@type" : "@id"
+    },
+    "hasRelationshipWith" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#hasRelationshipWith",
+      "@type" : "@id"
+    },
+    "isSonOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isSonOf",
+      "@type" : "@id"
+    },
+    "hasMaster" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#hasMaster",
+      "@type" : "@id"
+    },
+    "isWidowOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isWidowOf",
+      "@type" : "@id"
+    },
+    "isHusbandOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isHusbandOf",
+      "@type" : "@id"
+    },
+    "isStepmotherOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isStepmotherOf",
+      "@type" : "@id"
+    },
+    "isSisterOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isSisterOf",
+      "@type" : "@id"
+    },
+    "isMotherInLawOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isMotherInLawOf",
+      "@type" : "@id"
+    },
+    "isGrandsonOf" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/data-rel#isGrandsonOf",
+      "@type" : "@id"
+    }
+  }
+}
