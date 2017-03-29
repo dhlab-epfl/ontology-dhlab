@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://vocab.dhlab.epfl.ch/archive-metadata#Serie" "http://vocab.dhlab.epfl.ch/archive-metadata#Register" "http://vocab.dhlab.epfl.ch/archive-metadata#Page" "http://vocab.dhlab.epfl.ch/archive-metadata#Fund" "http://vocab.dhlab.epfl.ch/archive-metadata#Box" "http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit" "http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalHolder" ; /*classes style*/
+	"http://vocab.dhlab.epfl.ch/archive-metadata#Page" -> "http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit" [ label = "rdfs:subClassOf" ];
+	"http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalHolder" -> "http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit" [ label = "rdfs:subClassOf" ];
+	"http://vocab.dhlab.epfl.ch/archive-metadata#Register" -> "http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit" [ label = "rdfs:subClassOf" ];
+	"http://vocab.dhlab.epfl.ch/archive-metadata#Fund" -> "http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit" [ label = "rdfs:subClassOf" ];
+	"http://vocab.dhlab.epfl.ch/archive-metadata#Serie" -> "http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit" [ label = "rdfs:subClassOf" ];
+	"http://vocab.dhlab.epfl.ch/archive-metadata#Box" -> "http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit" [ label = "rdfs:subClassOf" ];
+
+}

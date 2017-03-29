@@ -1,0 +1,13 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://vocab.dhlab.epfl.ch/data-core#Mention" "http://vocab.dhlab.epfl.ch/data-core#Entity" "data-common:Sestiere" "data-common:PlaceMention" "data-common:Place" "data-common:PersonMention" "data-common:Person" "data-common:Parish" "data-common:EventMention" ; /*classes style*/
+	"data-common:PersonMention" -> "http://vocab.dhlab.epfl.ch/data-core#Mention" [ label = "rdfs:subClassOf" ];
+	"data-common:Place" -> "http://vocab.dhlab.epfl.ch/data-core#Entity" [ label = "rdfs:subClassOf" ];
+	"data-common:Sestiere" -> "data-common:Place" [ label = "rdfs:subClassOf" ];
+	"data-common:PlaceMention" -> "http://vocab.dhlab.epfl.ch/data-core#Mention" [ label = "rdfs:subClassOf" ];
+	"data-common:Parish" -> "data-common:Place" [ label = "rdfs:subClassOf" ];
+	"data-common:Person" -> "http://vocab.dhlab.epfl.ch/data-core#Entity" [ label = "rdfs:subClassOf" ];
+	"data-common:EventMention" -> "http://vocab.dhlab.epfl.ch/data-core#Mention" [ label = "rdfs:subClassOf" ];
+
+}
