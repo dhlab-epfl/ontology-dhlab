@@ -1,0 +1,9 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://vocab.dhlab.epfl.ch/archive-metadata/1.0> a prov:Entity;
+	 dc:title "Archive Metadata Model";
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Maud Ehrmann".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "February 2017";
+.

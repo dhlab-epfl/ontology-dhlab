@@ -5,9 +5,12 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dhc="http://vocab.dhlab.epfl.ch/dhcanvas#">
     <owl:Ontology rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas">
         <owl:versionIRI rdf:resource="http://vocab.dhlab.epfl.ch/dhcanvas/1.0"/>
+        <rdfs:comment xml:lang="en">This vocabulary gathers terms which describes the few elements of the DHCanvas annotation interface data model that are not covered by the IIIF Presentation API nor the Web Annotation Data Model. This is work-in-progress.</rdfs:comment>
+        <rdfs:label xml:lang="en">DHCanvas ontology</rdfs:label>
     </owl:Ontology>
     
 
@@ -25,7 +28,10 @@
 
     <!-- http://vocab.dhlab.epfl.ch/dhcanvas#hasBoundingBox -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#hasBoundingBox"/>
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#hasBoundingBox">
+        <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/dhcanvas#Segment"/>
+        <rdfs:label xml:lang="en">hasBoundingBox</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -40,42 +46,48 @@
     
 
 
-    <!-- http://vocab.dhlab.epfl.ch/dhcanvas#isAnnotated -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#isAnnotated">
-        <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/dhcanvas#Segment"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://vocab.dhlab.epfl.ch/dhcanvas#pageCount -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#pageCount"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#pageCount">
+        <rdfs:comment xml:lang="en">This propoerty allows to state the number of pages of a Manifest.</rdfs:comment>
+        <rdfs:label xml:lang="en">pageCount</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/dhcanvas#thumbnail -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#thumbnail"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#thumbnail">
+        <rdfs:comment xml:lang="en">Indicates the thumbnail of an image.</rdfs:comment>
+        <rdfs:label xml:lang="en">thumbnail</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/dhcanvas#uuid -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#uuid"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#uuid">
+        <rdfs:comment xml:lang="en">This property allows to state the universally unique identifier of an object.</rdfs:comment>
+        <rdfs:label xml:lang="en">uuid</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/dhcanvas#x -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#x"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#x">
+        <rdfs:comment xml:lang="en">This property allows to state a coordinate value on a the x-axis.</rdfs:comment>
+        <rdfs:label xml:lang="en">x</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/dhcanvas#y -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#y"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#y">
+        <rdfs:comment xml:lang="en">This property allows to state a coordinate value on a the y-axis.</rdfs:comment>
+        <rdfs:label xml:lang="en">y</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -92,7 +104,10 @@
 
     <!-- http://vocab.dhlab.epfl.ch/dhcanvas#Segment -->
 
-    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#Segment"/>
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/dhcanvas#Segment">
+        <rdfs:comment xml:lang="en">A portion of an image.</rdfs:comment>
+        <rdfs:label xml:lang="en">Segment</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 

@@ -1,0 +1,104 @@
+@prefix :        <http://vocab.dhlab.epfl.ch/archive-metadata#> .
+@prefix vtm-arch:  <http://vocab.dhlab.epfl.ch/vtm-archive/1.0#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix meta:    <http://vocab.dhlab.epfl.ch/archive-metadata#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+meta:isImageOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isImageOf"@en .
+
+meta:box
+      a       owl:DatatypeProperty ;
+      rdfs:label "box"@en .
+
+meta:Series
+      a       owl:Class ;
+      rdfs:label "Series"@en ;
+      rdfs:subClassOf meta:ArchivalUnit .
+
+<http://vocab.dhlab.epfl.ch/archive-metadata>
+      a       owl:Ontology ;
+      rdfs:comment "A embryon of vocabulary to represent archival metadata information. This vocabulary will be replaced by a professional standard, we think of the Record in Context Conceptual Model, which specification should come soon."@en ;
+      rdfs:label "Archive Metadata Model"@en ;
+      owl:versionIRI <http://vocab.dhlab.epfl.ch/archive-metadata/1.0> .
+
+meta:fund
+      a       owl:DatatypeProperty ;
+      rdfs:label "fund"@en .
+
+meta:hasArchivalSignature
+      a       owl:ObjectProperty ;
+      rdfs:label "hasArchivalSignature"@en .
+
+meta:Register
+      a       owl:Class ;
+      rdfs:label "Register"@en ;
+      rdfs:subClassOf meta:ArchivalUnit .
+
+meta:pageSide
+      a       owl:DatatypeProperty ;
+      rdfs:label "pageSide"@en .
+
+meta:archivalHolder
+      a       owl:DatatypeProperty ;
+      rdfs:label "archivalHolder"@en .
+
+meta:series
+      a       owl:DatatypeProperty ;
+      rdfs:label "series"@en .
+
+meta:isPageOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isPageOf"@en .
+
+meta:ArchivalSignature
+      a       owl:Class ;
+      rdfs:label "ArchivalSignature"@en .
+
+meta:Fund
+      a       owl:Class ;
+      rdfs:label "Fund"@en ;
+      rdfs:subClassOf meta:ArchivalUnit .
+
+meta:ArchivalUnit
+      a       owl:Class ;
+      rdfs:label "ArchivalUnit"@en .
+
+meta:hasPage
+      a       owl:ObjectProperty ;
+      rdfs:label "hasPage"@en .
+
+meta:ArchivalHolder
+      a       owl:Class ;
+      rdfs:label "ArchivalHolder"@en ;
+      rdfs:subClassOf meta:ArchivalUnit .
+
+meta:onPage
+      a       owl:ObjectProperty ;
+      rdfs:label "onPage"@en .
+
+meta:number
+      a       owl:DatatypeProperty ;
+      rdfs:label "number"@en ;
+      rdfs:range xsd:int .
+
+meta:isImagedBy
+      a       owl:ObjectProperty ;
+      rdfs:label "isImagedBy"@en .
+
+meta:Page
+      a       owl:Class ;
+      rdfs:label "Page"@en ;
+      rdfs:subClassOf meta:ArchivalUnit .
+
+meta:Box
+      a       owl:Class ;
+      rdfs:label "Box"@en ;
+      rdfs:subClassOf meta:ArchivalUnit .
+
+meta:ArchivalSignatureComponent
+      a       owl:Class ;
+      rdfs:label "ArchivalSignatureComponent"@en .

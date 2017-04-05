@@ -1,0 +1,13 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://vocab.dhlab.epfl.ch/garzoni> a prov:Entity;
+	 dc:title "Garzoni Data Model";
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Maud Ehrmann".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Giovanni Colavizza".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name " Davide Drago".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name " Andrea Erboso".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name " Francesca Zugno".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "February 2017";
+.

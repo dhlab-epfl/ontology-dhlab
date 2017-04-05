@@ -1,0 +1,324 @@
+@prefix :        <http://vocab.dhlab.epfl.ch/data-common#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix data-common:  <http://vocab.dhlab.epfl.ch/data-common#> .
+
+data-common:inParish
+      a       owl:ObjectProperty ;
+      rdfs:label "inParish"@en .
+
+data-common:isWifeOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isWifeOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:standardForm
+      a       owl:DatatypeProperty ;
+      rdfs:label "standardForm"@en ;
+      rdfs:subPropertyOf owl:topDataProperty .
+
+data-common:PersonMention
+      a       owl:Class ;
+      rdfs:label "PersonMention"@en ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Mention> .
+
+data-common:Place
+      a       owl:Class ;
+      rdfs:label "Place"@en ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Entity> .
+
+data-common:isGrandfatherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGrandfatherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isGreatGrandfatherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGreatGrandfatherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isPartnerOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isPartnerOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:inSestiere
+      a       owl:ObjectProperty ;
+      rdfs:label "inSestiere"@en .
+
+data-common:isGrandsonOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGrandsonOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:PlaceMention
+      a       owl:Class ;
+      rdfs:label "PlaceMention"@en ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Mention> .
+
+data-common:isUncleOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isUncleOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:certainty
+      a       owl:DatatypeProperty ;
+      rdfs:label "certainty"@en .
+
+data-common:genericReference
+      a       owl:ObjectProperty ;
+      rdfs:label "genericReference"@en ;
+      rdfs:subPropertyOf data-common:hasRelationshipWith .
+
+data-common:isStepfatherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isStepfatherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isGuarantorOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGuarantorOf"@en ;
+      rdfs:subPropertyOf data-common:hasBusinessRelationshipWith .
+
+data-common:isHusbandOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isHusbandOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isColleagueOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isColleagueOf"@en ;
+      rdfs:subPropertyOf data-common:hasBusinessRelationshipWith .
+
+data-common:hasMaster
+      a       owl:ObjectProperty ;
+      rdfs:label "hasMaster"@en ;
+      rdfs:subPropertyOf data-common:hasBusinessRelationshipWith .
+
+<http://vocab.dhlab.epfl.ch/data-core#Mention>
+      a       owl:Class ;
+      rdfs:isDefinedBy <http://vocab.dhlab.epfl.ch/data-core#Mention> ;
+      rdfs:label "Mention"@en .
+
+data-common:hasGuarantor
+      a       owl:ObjectProperty ;
+      rdfs:label "hasGuarantor"@en ;
+      rdfs:subPropertyOf data-common:hasBusinessRelationshipWith .
+
+data-common:isAdoptedBy
+      a       owl:ObjectProperty ;
+      rdfs:label "isAdoptedBy"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:EventMention
+      a       owl:Class ;
+      rdfs:label "EventMention"@en ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Mention> .
+
+data-common:isAuntOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isAuntOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isBrotherInLawOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isBrotherInLawOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isMotherInLawOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isMotherInLawOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isBrotherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isBrotherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isSisterOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isSisterOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:duration
+      a       owl:DatatypeProperty ;
+      rdfs:label "duration"@en .
+
+data-common:isSisterInLawOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isSisterInLawOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isStepmotherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isStepmotherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isGrandmotherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGrandmotherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isFamilyOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isFamilyOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:Person
+      a       owl:Class ;
+      rdfs:label "Person"@en ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Entity> .
+
+data-common:isGreatGrandchildOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGreatGrandchildOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isGodfatherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGodfatherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isFatherInLawOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isFatherInLawOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:hasBusinessWith
+      a       owl:ObjectProperty ;
+      rdfs:label "hasBusinessWith"@en ;
+      rdfs:subPropertyOf data-common:hasBusinessRelationshipWith .
+
+data-common:isAdopterOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isAdopterOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isSonInLawOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isSonInLawOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:hasBusinessRelationshipWith
+      a       owl:ObjectProperty ;
+      rdfs:label "hasBusinessRelationshipWith"@en ;
+      rdfs:subPropertyOf data-common:hasRelationshipWith .
+
+<http://vocab.dhlab.epfl.ch/data-core#Entity>
+      a       owl:Class ;
+      rdfs:isDefinedBy <http://vocab.dhlab.epfl.ch/data-core#Entity> ;
+      rdfs:label "Entity"@en .
+
+data-common:isCousinOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isCousinOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:hasRelationshipWith
+      a       owl:ObjectProperty ;
+      rdfs:label "hasRelationshipWith"@en ;
+      rdfs:subPropertyOf owl:topObjectProperty .
+
+data-common:hasFamilyRelationshipWith
+      a       owl:ObjectProperty ;
+      rdfs:label "hasFamilyRelationshipWith"@en ;
+      rdfs:subPropertyOf data-common:hasRelationshipWith .
+
+<http://vocab.dhlab.epfl.ch/data-common>
+      a       owl:Ontology ;
+      rdfs:comment "This ontology focuses on formalizing the common elements used in different chapters of the Venice time machine project. This is a very first version and work in progress."@en ;
+      rdfs:label "Common Data Model Ontology." ;
+      owl:versionIRI <http://vocab.dhlab.epfl.ch/data-common/1.0> .
+
+data-common:isGreatGranddaughterOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGreatGrandduaghterOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isGodmotherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGodmotherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isApprenticeOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isApprenticeOf"@en ;
+      rdfs:subPropertyOf data-common:hasBusinessRelationshipWith .
+
+data-common:isStepsonOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isStepsonOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isMotherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isMotherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:hasApprentice
+      a       owl:ObjectProperty ;
+      rdfs:label "hasApprentice"@en ;
+      rdfs:subPropertyOf data-common:hasBusinessRelationshipWith .
+
+data-common:transcript
+      a       owl:DatatypeProperty ;
+      rdfs:label "transcript"@en ;
+      rdfs:subPropertyOf owl:topDataProperty .
+
+data-common:isNephewOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isNephewOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isGranddaughterOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGranddaughterOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isHeirOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isHeirOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isWidowOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isWidowOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isDaughterOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isDaughterOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isFatherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isFatherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isGreatGrandmotherOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGreatGrandmotherOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:Parish
+      a       owl:Class ;
+      rdfs:label "Parish"@en ;
+      rdfs:subClassOf data-common:Place .
+
+data-common:isSonOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isSonOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:isGreatGrandsonOf
+      a       owl:ObjectProperty ;
+      rdfs:label "isGreatGrandsonOf"@en ;
+      rdfs:subPropertyOf data-common:hasFamilyRelationshipWith .
+
+data-common:Sestiere
+      a       owl:Class ;
+      rdfs:label "Sestiere"@en ;
+      rdfs:subClassOf data-common:Place .

@@ -1,0 +1,621 @@
+@prefix :        <http://vocab.dhlab.epfl.ch/garzoni#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix grz:     <http://vocab.dhlab.epfl.ch/garzoni#> .
+
+grz:relatedContract
+      a       owl:DatatypeProperty .
+
+grz:Condition
+      a       owl:Class ;
+      rdfs:comment "Any condition or terms stated in a apprenticeship contract."^^xsd:anyURI ;
+      rdfs:label "Condition"@fr , "Condition"@en .
+
+grz:hasSalaryProgression
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Restriction ;
+                owl:allValuesFrom grz:FinancialCondition ;
+                owl:onProperty grz:conditionType
+              ] .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Other_(currency)>
+      a       owl:NamedIndividual , grz:CurrencyType .
+
+grz:OtherSalary
+      a       grz:FinancialConditionType , owl:NamedIndividual .
+
+grz:details
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf owl:topDataProperty .
+
+grz:City
+      a       grz:PlaceType , owl:NamedIndividual .
+
+grz:PlaceType
+      a       owl:Class ;
+      rdfs:subClassOf grz:Type ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (grz:City grz:Country grz:Region grz:RuralArea)
+              ] .
+
+grz:hasWorkshop
+      a       owl:ObjectProperty ;
+      rdfs:range grz:WorkshopMention ;
+      owl:inverseOf grz:isWorkshopOf .
+
+grz:AppellationComponent
+      a       owl:Class ;
+      rdfs:comment "This class comprises elements which compose the appellation or name of an entity."@en ;
+      rdfs:label "Appellation Component"@en , "Composant d'appellation"@fr .
+
+grz:hasProfession
+      a       owl:ObjectProperty .
+
+grz:hasGeographicalOrigin
+      a       owl:ObjectProperty .
+
+<http://vocab.dhlab.epfl.ch/data-core#Source>
+      a       owl:Class .
+
+grz:RuralArea
+      a       grz:PlaceType , owl:NamedIndividual .
+
+grz:id
+      a       owl:DatatypeProperty .
+
+grz:hasMargin
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:Contract ;
+      rdfs:range xsd:boolean .
+
+grz:originalFilename
+      a       owl:DatatypeProperty .
+
+grz:Apprenticeship
+      a       grz:EventType , owl:NamedIndividual ;
+      rdfs:comment "An event which corresponds to the execution of an apprenticeship."@en ;
+      rdfs:label "Apprenticeship"@en , "Apprentissage"@fr .
+
+<http://vocab.dhlab.epfl.ch/data-core#Mention>
+      a       owl:Class .
+
+grz:Country
+      a       grz:PlaceType , owl:NamedIndividual .
+
+grz:PersonalCare
+      a       grz:HostingConditionType , owl:NamedIndividual .
+
+grz:sestiere_literal
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+grz:hasResidence
+      a       owl:ObjectProperty .
+
+grz:SemestralPeriod
+      a       grz:PeriodizationType , owl:NamedIndividual .
+
+grz:Collectivename
+      a       owl:Class ;
+      rdfs:comment "In Garzoni context, this class covers expressions used to refer to collective entities. Typical examples include: \"et fratelli\" (and brothers), \"e fioli\", \"et sua consorte\" ."@en ;
+      rdfs:label "Collective name"@en , "Nom collectif"@fr ;
+      rdfs:subClassOf grz:AppellationComponent .
+
+grz:SingleSalary
+      a       grz:FinancialConditionType , owl:NamedIndividual ;
+      rdfs:comment "In a professional contractual setting, a fixed regular payment due by an employer to an employee."@en .
+
+grz:oid
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:Contract .
+
+grz:period
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:HostingCondition , grz:FinancialCondition ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf grz:conditionsDataProperties .
+
+<http://vocab.dhlab.epfl.ch/garzoni>
+      a       owl:Ontology ;
+      rdfs:comment "An ontology which models the information contained in the archival series \"Accordi dei Garzoni\" of the Venetian State Archives, relative to early modern venetian apprenticeship domain."@en ;
+      rdfs:label "Garzoni Ontology"@en ;
+      owl:versionIRI <http://vocab.dhlab.epfl.ch/garzoni> ;
+      owl:versionInfo "1.0"^^xsd:float .
+
+grz:name
+      a       owl:ObjectProperty ;
+      rdfs:comment "This property is used to attribute a PersonAppellation to a PersonMention or a PersonEntity."^^xsd:anyURI ;
+      rdfs:range grz:PersonAppellation ;
+      rdfs:seeAlso "http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#P1"^^xsd:anyURI .
+
+<http://vocab.dhlab.epfl.ch/data-core#Entity>
+      a       owl:Class ;
+      rdfs:isDefinedBy "http://vocab.dhlab.epfl.ch/data-core#Entity"^^xsd:anyURI .
+
+grz:MasterPayer
+      a       owl:NamedIndividual , grz:PayerType .
+
+grz:Patronymic1
+      a       owl:Class ;
+      rdfs:comment """Part of the name of a person which refers to one of his/her immediate relative. In (former) Italian family names, the patronymic is preceded by the word \"di\" or \"quondam\", e.g. \"Federico Di Garla\".
+\"Di\" stands for \"figlio/figlia di\" or \"marito/moglie di\" meaning the son/daughter or husband/wife of a living person. \"Quondam\" means the same but for a person who ceased to live."""@en ;
+      rdfs:label "Patronyme 1"@fr , "Patronym 1"@en ;
+      rdfs:subClassOf grz:AppellationComponent .
+
+grz:onMultiplePages
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:Contract ;
+      rdfs:range xsd:boolean .
+
+grz:PayerType
+      a       owl:Class ;
+      rdfs:subClassOf grz:Type ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (grz:ApprenticePayer grz:MasterPayer grz:OtherPayer)
+              ] .
+
+grz:Workshop
+      a       owl:Class ;
+      rdfs:comment "The place where objects are crafted or manufactured."@en ;
+      rdfs:label """Workshop
+"""^^xsd:string , "Atelier"@fr ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Entity> .
+
+grz:hasNextPart
+      a       owl:ObjectProperty .
+
+grz:ProgressiveSalary
+      a       grz:FinancialConditionType , owl:NamedIndividual .
+
+grz:EventType
+      a       owl:Class ;
+      rdfs:isDefinedBy <http://semanticweb.cs.vu.nl/2009/11/sem/EventType> ;
+      rdfs:subClassOf grz:Type ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (grz:Apprenticeship grz:BreachOfContract grz:Enrolment grz:Flee)
+              ] .
+
+grz:conditionType
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain grz:Condition .
+
+grz:professionCategory
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:ProfessionMention ;
+      rdfs:range xsd:string .
+
+grz:WeeklyPeriod
+      a       grz:PeriodizationType , owl:NamedIndividual .
+
+grz:hasCondition
+      a       owl:ObjectProperty ;
+      rdfs:domain grz:Contract ;
+      rdfs:range grz:Condition ;
+      owl:inverseOf grz:isConditionOf .
+
+grz:ageText
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf grz:personDataProperties .
+
+grz:Enrolment
+      a       grz:EventType , owl:NamedIndividual ;
+      rdfs:comment "An event which corresponds to the enrolment of an apprenticship. In the Garzoni project, it corresponds to the registration of the contract at the institution of the Giustizia Vecchia."@en ;
+      rdfs:label "Inscription"@fr , "Enrolment"@en .
+
+grz:Master
+      a       owl:NamedIndividual , grz:RoleType ;
+      rdfs:comment "A role or function which a person has while being a master duting an apprenticship."@en .
+
+grz:ApprenticePayer
+      a       owl:NamedIndividual , grz:PayerType .
+
+grz:ApplicationRule
+      a       owl:Class ;
+      rdfs:subClassOf grz:Type ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (grz:SanoApplication grz:SanoInfermoApplication)
+              ] .
+
+grz:Patronymic2
+      a       owl:Class ;
+      rdfs:comment "Patronymic 2"@en , """Part of the name of a person whic refers to one of his/her relative. In (former) Italian family names, the patronymic is preceded by the word \"di\" or \"quondam\", e.g. \"Federico Di Garla\".
+\"Di\" stands for \"figlio/figlia di\" or \"marito/moglie di\" meaning the son/daughter or husband/wife of a living person. \"Quondam\" means the same but for a person who ceased to live."""^^xsd:anyURI ;
+      rdfs:label "Patronyme 2"@fr ;
+      rdfs:subClassOf grz:AppellationComponent .
+
+grz:Surname
+      a       owl:Class ;
+      rdfs:comment "The surname or family name of a person entity."@en ;
+      rdfs:label "Nom de famille"@fr , "Surname"@en ;
+      rdfs:seeAlso "http://xmlns.com/foaf/0.1/familyName"^^xsd:anyURI ;
+      rdfs:subClassOf grz:AppellationComponent .
+
+grz:site
+      a       owl:DatatypeProperty .
+
+grz:personDataProperties
+      a       owl:DatatypeProperty .
+
+grz:SanoApplication
+      a       owl:NamedIndividual , grz:ApplicationRule .
+
+grz:OtherPayer
+      a       owl:NamedIndividual , grz:PayerType .
+
+grz:Charge
+      a       owl:Class ;
+      rdfs:label """Charge
+"""^^xsd:string ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Entity> .
+
+grz:currencyUnit
+      a       owl:DatatypeProperty ;
+      rdfs:subPropertyOf grz:conditionsDataProperties .
+
+grz:worksFor
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf grz:personDataProperties .
+
+grz:applicationRule
+      a       owl:DatatypeProperty ;
+      rdfs:comment "This property allows to state how the condition a condition applied."@en ;
+      rdfs:domain grz:HostingCondition ;
+      rdfs:range
+              [ a       rdfs:Datatype ;
+                owl:oneOf
+                        [ a       rdf:List ;
+                          rdf:first "none" ;
+                          rdf:rest
+                                  [ a       rdf:List ;
+                                    rdf:first "sano" ;
+                                    rdf:rest
+                                            [ a       rdf:List ;
+                                              rdf:first "sano et infermo" ;
+                                              rdf:rest ()
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      rdfs:subPropertyOf grz:conditionsDataProperties .
+
+grz:totalAmount
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:FinancialCondition ;
+      rdfs:range xsd:integer ;
+      rdfs:subPropertyOf grz:conditionsDataProperties .
+
+grz:FinancialConditionType
+      a       owl:Class ;
+      rdfs:subClassOf grz:Type ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (grz:Pledge grz:SingleSalary)
+              ] .
+
+grz:Ducati
+      a       owl:NamedIndividual , grz:CurrencyType .
+
+grz:MonthlyPeriod
+      a       grz:PeriodizationType , owl:NamedIndividual .
+
+grz:DailyPeriod
+      a       grz:PeriodizationType , owl:NamedIndividual .
+
+grz:Forename
+      a       owl:Class ;
+      rdfs:comment "The firstname of a person."@en ;
+      rdfs:label "Firstname"@en , "Prénom"@fr ;
+      rdfs:seeAlso "http://xmlns.com/foaf/0.1/givenName"^^xsd:anyURI ;
+      rdfs:subClassOf grz:AppellationComponent .
+
+grz:Apprentice
+      a       owl:NamedIndividual , grz:RoleType ;
+      rdfs:comment "A role or function which a person has when being enrolled as apprentice during an apprenticeship."@en .
+
+grz:quondam1
+      a       owl:DatatypeProperty , owl:FunctionalProperty ;
+      rdfs:domain grz:PersonAppellation ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf grz:personDataProperties .
+
+grz:clothingType
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:HostingCondition ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf grz:conditionsDataProperties .
+
+grz:Soldi
+      a       owl:NamedIndividual , grz:CurrencyType .
+
+grz:isWorkshopOf
+      a       owl:ObjectProperty ;
+      rdfs:domain grz:WorkshopMention .
+
+grz:hasCharge
+      a       owl:ObjectProperty .
+
+grz:Profession
+      a       owl:Class ;
+      rdfs:comment "Activity in which someone is skilled and which is carries out in order to make a living. Occupation."@en ;
+      rdfs:label "Profession"@fr , "Profession"@en ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Entity> .
+
+grz:HostingCondition
+      a       owl:Class ;
+      rdfs:subClassOf grz:Condition ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:allValuesFrom grz:HostingConditionType ;
+                owl:onProperty grz:conditionType
+              ] .
+
+grz:hasRole
+      a       owl:ObjectProperty .
+
+grz:mediaWikiReference
+      a       owl:DatatypeProperty .
+
+grz:paidInGoods
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:HostingCondition , grz:FinancialCondition ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf grz:conditionsDataProperties .
+
+grz:quondam2
+      a       owl:DatatypeProperty , owl:FunctionalProperty ;
+      rdfs:domain grz:PersonAppellation ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf grz:personDataProperties .
+
+grz:denunciationDate
+      a       owl:DatatypeProperty .
+
+grz:Nickname
+      a       owl:Class ;
+      rdfs:label "Surnom"@fr , "Nickname"@en ;
+      rdfs:seeAlso "http://xmlns.com/foaf/0.1/nick"^^xsd:anyURI ;
+      rdfs:subClassOf grz:AppellationComponent .
+
+grz:Other
+      a       owl:NamedIndividual , grz:RoleType ;
+      rdfs:comment "An undetermined role or function taht a person has."@en .
+
+grz:cites
+      a       owl:ObjectProperty ;
+      rdfs:domain grz:Contract ;
+      rdfs:range grz:Contract .
+
+grz:SanoInfermoApplication
+      a       owl:NamedIndividual , grz:ApplicationRule .
+
+grz:progressive
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean .
+
+grz:GenericExpenses
+      a       grz:HostingConditionType , owl:NamedIndividual .
+
+grz:identifiedPerson
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf grz:personDataProperties .
+
+grz:PeriodizationType
+      a       owl:Class ;
+      rdfs:subClassOf grz:Type ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (grz:AnnualPeriod grz:DailyPeriod grz:MonthlyPeriod grz:SemestralPeriod grz:WeeklyPeriod grz:WholePeriod)
+              ] .
+
+grz:WorkshopMention
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Mention> .
+
+grz:Pledge
+      a       grz:FinancialConditionType , owl:NamedIndividual .
+
+grz:PersonAppellation
+      a       owl:Class ;
+      rdfs:comment "The name of a person entity."^^xsd:string ;
+      rdfs:seeAlso "http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#E41"^^xsd:anyURI .
+
+grz:ProfessionMention
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Mention> .
+
+grz:Lire
+      a       owl:NamedIndividual , grz:CurrencyType .
+
+grz:moneyInformation
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:FinancialCondition ;
+      rdfs:subPropertyOf grz:conditionsDataProperties .
+
+grz:Type
+      a       owl:Class ;
+      rdfs:isDefinedBy <http://semanticweb.cs.vu.nl/2009/11/sem/Type> .
+
+grz:Flee
+      a       grz:EventType , owl:NamedIndividual ;
+      rdfs:comment "An event which corresponds to the flee of an apprentice during its apprenticeship."@en ;
+      rdfs:label "Flee"@en , "Fugue"@fr .
+
+grz:Accommodation
+      a       grz:HostingConditionType , owl:NamedIndividual .
+
+grz:BreachOfContract
+      a       grz:EventType , owl:NamedIndividual ;
+      rdfs:comment "An event which corresponds to the breaking of a contract."@en ;
+      rdfs:label "Rupture de contrat"@fr , "Breach of a contract"@en .
+
+grz:paidBy
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:HostingCondition , grz:FinancialCondition ;
+      rdfs:range
+              [ a       rdfs:Datatype ;
+                owl:oneOf
+                        [ a       rdf:List ;
+                          rdf:first "apprentice" ;
+                          rdf:rest
+                                  [ a       rdf:List ;
+                                    rdf:first "master" ;
+                                    rdf:rest
+                                            [ a       rdf:List ;
+                                              rdf:first "nobody" ;
+                                              rdf:rest
+                                                      [ a       rdf:List ;
+                                                        rdf:first "other" ;
+                                                        rdf:rest ()
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      rdfs:subPropertyOf grz:conditionsDataProperties .
+
+grz:RoleType
+      a       owl:Class ;
+      rdfs:isDefinedBy <http://semanticweb.cs.vu.nl/2009/11/sem/RoleType> ;
+      rdfs:subClassOf grz:Type ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (grz:Apprentice grz:Guarantor grz:Master grz:Other)
+              ] .
+
+grz:Clothing
+      a       grz:HostingConditionType , owl:NamedIndividual .
+
+grz:Contract
+      a       owl:Class ;
+      rdfs:comment "A legal agreement between parties that set up the conditions of an employment. In the Garzoni project, this corresponds to an apprenticeship contract between a master and an apprentice with, often, the caution of a guarantor."@en ;
+      rdfs:label "Contract"^^xsd:string , "Contrat"@fr ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Source> .
+
+grz:isNextPartOf
+      a       owl:ObjectProperty ;
+      rdfs:domain grz:Contract ;
+      rdfs:range grz:Contract .
+
+grz:conditionsDataProperties
+      a       owl:DatatypeProperty .
+
+grz:ChargeMention
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/data-core#Mention> .
+
+grz:periodization
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:HostingCondition , grz:FinancialCondition ;
+      rdfs:range
+              [ a       rdfs:Datatype ;
+                owl:oneOf
+                        [ a       rdf:List ;
+                          rdf:first "annual" ;
+                          rdf:rest
+                                  [ a       rdf:List ;
+                                    rdf:first "daily" ;
+                                    rdf:rest
+                                            [ a       rdf:List ;
+                                              rdf:first "monthly" ;
+                                              rdf:rest
+                                                      [ a       rdf:List ;
+                                                        rdf:first "none" ;
+                                                        rdf:rest
+                                                                [ a       rdf:List ;
+                                                                  rdf:first "semestral" ;
+                                                                  rdf:rest
+                                                                          [ a       rdf:List ;
+                                                                            rdf:first "weekly" ;
+                                                                            rdf:rest
+                                                                                    [ a       rdf:List ;
+                                                                                      rdf:first "whole period" ;
+                                                                                      rdf:rest ()
+                                                                                    ]
+                                                                          ]
+                                                                ]
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      rdfs:subPropertyOf grz:conditionsDataProperties .
+
+grz:placeType
+      a       owl:ObjectProperty .
+
+grz:HostingConditionType
+      a       owl:Class ;
+      rdfs:subClassOf grz:Type ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (grz:Accommodation grz:Clothing grz:GenericExpenses grz:PersonalCare)
+              ] .
+
+grz:Region
+      a       grz:PlaceType , owl:NamedIndividual .
+
+grz:Guarantor
+      a       owl:NamedIndividual , grz:RoleType ;
+      rdfs:comment "A role or function that a person has while being a guarantor in the context of an apprenticeship."@en .
+
+grz:insigna
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:WorkshopMention ;
+      rdfs:range xsd:string .
+
+grz:FinancialCondition
+      a       owl:Class ;
+      rdfs:comment "This class gathers contract conditions of financial nature." ;
+      rdfs:subClassOf grz:Condition ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:allValuesFrom grz:FinancialConditionType ;
+                owl:onProperty grz:conditionType
+              ] .
+
+grz:parish_literal
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+grz:partialAmount
+      a       owl:DatatypeProperty ;
+      rdfs:domain grz:FinancialCondition ;
+      rdfs:range xsd:integer ;
+      rdfs:subPropertyOf grz:conditionsDataProperties .
+
+grz:isConditionOf
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain grz:Condition ;
+      rdfs:range grz:Contract .
+
+grz:WholePeriod
+      a       grz:PeriodizationType , owl:NamedIndividual .
+
+grz:hasLocation
+      a       owl:ObjectProperty ;
+      rdfs:domain grz:WorkshopMention ;
+      rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/place.owl> ;
+      rdfs:subPropertyOf owl:topObjectProperty .
+
+grz:CurrencyType
+      a       owl:Class ;
+      rdfs:subClassOf grz:Type ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (grz:Ducati grz:Lire grz:Soldi <http://vocab.dhlab.epfl.ch/garzoni#Other_(currency)>)
+              ] .
+
+grz:AnnualPeriod
+      a       grz:PeriodizationType , owl:NamedIndividual .

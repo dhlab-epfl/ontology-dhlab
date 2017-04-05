@@ -1,0 +1,325 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:data-common="http://vocab.dhlab.epfl.ch/data-common#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#inParish">
+    <rdfs:label xml:lang="en">inParish</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isWifeOf">
+    <rdfs:label xml:lang="en">isWifeOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#standardForm">
+    <rdfs:label xml:lang="en">standardForm</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#PersonMention">
+    <rdfs:label xml:lang="en">PersonMention</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#Place">
+    <rdfs:label xml:lang="en">Place</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGrandfatherOf">
+    <rdfs:label xml:lang="en">isGrandfatherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGreatGrandfatherOf">
+    <rdfs:label xml:lang="en">isGreatGrandfatherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isPartnerOf">
+    <rdfs:label xml:lang="en">isPartnerOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#inSestiere">
+    <rdfs:label xml:lang="en">inSestiere</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGrandsonOf">
+    <rdfs:label xml:lang="en">isGrandsonOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#PlaceMention">
+    <rdfs:label xml:lang="en">PlaceMention</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isUncleOf">
+    <rdfs:label xml:lang="en">isUncleOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#certainty">
+    <rdfs:label xml:lang="en">certainty</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#genericReference">
+    <rdfs:label xml:lang="en">genericReference</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isStepfatherOf">
+    <rdfs:label xml:lang="en">isStepfatherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGuarantorOf">
+    <rdfs:label xml:lang="en">isGuarantorOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isHusbandOf">
+    <rdfs:label xml:lang="en">isHusbandOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isColleagueOf">
+    <rdfs:label xml:lang="en">isColleagueOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#hasMaster">
+    <rdfs:label xml:lang="en">hasMaster</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-core#Mention">
+    <rdfs:label xml:lang="en">Mention</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#hasGuarantor">
+    <rdfs:label xml:lang="en">hasGuarantor</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isAdoptedBy">
+    <rdfs:label xml:lang="en">isAdoptedBy</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#EventMention">
+    <rdfs:label xml:lang="en">EventMention</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isAuntOf">
+    <rdfs:label xml:lang="en">isAuntOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isBrotherInLawOf">
+    <rdfs:label xml:lang="en">isBrotherInLawOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isMotherInLawOf">
+    <rdfs:label xml:lang="en">isMotherInLawOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isBrotherOf">
+    <rdfs:label xml:lang="en">isBrotherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isSisterOf">
+    <rdfs:label xml:lang="en">isSisterOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#duration">
+    <rdfs:label xml:lang="en">duration</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isSisterInLawOf">
+    <rdfs:label xml:lang="en">isSisterInLawOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isStepmotherOf">
+    <rdfs:label xml:lang="en">isStepmotherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGrandmotherOf">
+    <rdfs:label xml:lang="en">isGrandmotherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isFamilyOf">
+    <rdfs:label xml:lang="en">isFamilyOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#Person">
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGreatGrandchildOf">
+    <rdfs:label xml:lang="en">isGreatGrandchildOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGodfatherOf">
+    <rdfs:label xml:lang="en">isGodfatherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isFatherInLawOf">
+    <rdfs:label xml:lang="en">isFatherInLawOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#hasBusinessWith">
+    <rdfs:label xml:lang="en">hasBusinessWith</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isAdopterOf">
+    <rdfs:label xml:lang="en">isAdopterOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isSonInLawOf">
+    <rdfs:label xml:lang="en">isSonInLawOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith">
+    <rdfs:label xml:lang="en">hasBusinessRelationshipWith</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-core#Entity">
+    <rdfs:label xml:lang="en">Entity</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isCousinOf">
+    <rdfs:label xml:lang="en">isCousinOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#hasRelationshipWith">
+    <rdfs:label xml:lang="en">hasRelationshipWith</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith">
+    <rdfs:label xml:lang="en">hasFamilyRelationshipWith</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common">
+    <rdfs:label>Common Data Model Ontology.</rdfs:label>
+    <rdfs:comment xml:lang="en">This ontology focuses on formalizing the common elements used in different chapters of the Venice time machine project. This is a very first version and work in progress.</rdfs:comment>
+    <owl:versionIRI rdf:resource="http://vocab.dhlab.epfl.ch/data-common/1.0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGreatGranddaughterOf">
+    <rdfs:label xml:lang="en">isGreatGrandduaghterOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGodmotherOf">
+    <rdfs:label xml:lang="en">isGodmotherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isApprenticeOf">
+    <rdfs:label xml:lang="en">isApprenticeOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isStepsonOf">
+    <rdfs:label xml:lang="en">isStepsonOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isMotherOf">
+    <rdfs:label xml:lang="en">isMotherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#hasApprentice">
+    <rdfs:label xml:lang="en">hasApprentice</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#transcript">
+    <rdfs:label xml:lang="en">transcript</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isNephewOf">
+    <rdfs:label xml:lang="en">isNephewOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGranddaughterOf">
+    <rdfs:label xml:lang="en">isGranddaughterOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isHeirOf">
+    <rdfs:label xml:lang="en">isHeirOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isWidowOf">
+    <rdfs:label xml:lang="en">isWidowOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isDaughterOf">
+    <rdfs:label xml:lang="en">isDaughterOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isFatherOf">
+    <rdfs:label xml:lang="en">isFatherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGreatGrandmotherOf">
+    <rdfs:label xml:lang="en">isGreatGrandmotherOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#Parish">
+    <rdfs:label xml:lang="en">Parish</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#Place"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isSonOf">
+    <rdfs:label xml:lang="en">isSonOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#isGreatGrandsonOf">
+    <rdfs:label xml:lang="en">isGreatGrandsonOf</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-common#Sestiere">
+    <rdfs:label xml:lang="en">Sestiere</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#Place"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

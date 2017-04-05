@@ -1,0 +1,34 @@
+<h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>The <i>Core Data Model</i> ontology describes the core elements which need to be represented when extracting information from texts.
+
+When dealing with textual data, a obvious aspect to model is the difference between what appears in the text (the word) and what it is being referred to (the ‘thing’, through the meaning). In the case of lexical information, this amounts to distinguish between an occurrence of a word in a text and its meaning as stated in a dictionary. When dealing with entities, this distinction corresponds to the <i>mention(s)</i> of an entity in texts on the one hand and, on the other, the <i>entity</i> of the world they refer to. As a consequence, the present ontology defines 3 main classes:
+<ul>
+	<li> <b>Source</b>, i.e. an information object which mentions a </li>
+	<li> <b>Mention</b>, i.e. a fragment of the information object which refers to a </li>
+	<li> <b>Entity</b>, i.e. a real world entity of concept with distinct and independent existence. </li>
+</ul>
+</p>
+
+<p>These classes represent traditional and widely used textual annotation objects. As such, they compose the skeleton of various DHLAB activities involving text annotation, which is meant to be specialized according to projects' specific needs. A first "specialization layer" is realized by the <a href="http://vocab.dhlab.epfl.ch/data-common">common data model ontology</a>, and a subsequent one by the <a href="http://vocab.dhlab.epfl.ch/garzoni">garzoni ontology</a>. <p>
+
+<p>As of now the present ontology does not commit to an upper-level ontology; this relation will come at a later stage.</p>
+
+
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespaces</h3>
+
+<p>The namespace of the <i>data-core</i> ontology is <span style="color:blue">http://vocab.dhlab.epfl.ch/data-core#</span>, for which we use the prefix <span style="color:blue">core</span>. Other namespaces used in this document are reported in the table below.
+</p>
+
+<div id="ns" align="center">
+<table>
+<tbody>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>

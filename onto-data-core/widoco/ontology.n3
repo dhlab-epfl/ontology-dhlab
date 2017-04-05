@@ -1,0 +1,46 @@
+<http://vocab.dhlab.epfl.ch/data-core> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology defines the core elements of the Venice time machine data model, specifically regarding material of textual nature."@en .
+<http://vocab.dhlab.epfl.ch/data-core> <http://www.w3.org/2000/01/rdf-schema#comment> "Core Data Model Ontology"@en .
+<http://vocab.dhlab.epfl.ch/data-core> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.dhlab.epfl.ch/data-core/1.0> .
+<http://vocab.dhlab.epfl.ch/data-core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.dhlab.epfl.ch/data-core#refersTo> <http://www.w3.org/2000/01/rdf-schema#label> "refersTo"@en .
+<http://vocab.dhlab.epfl.ch/data-core#refersTo> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the entity a mention refers to."@en .
+<http://vocab.dhlab.epfl.ch/data-core#refersTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.dhlab.epfl.ch/data-core#Entity> .
+<http://vocab.dhlab.epfl.ch/data-core#refersTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.dhlab.epfl.ch/data-core#Mention> .
+<http://vocab.dhlab.epfl.ch/data-core#refersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.dhlab.epfl.ch/data-core#refersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.dhlab.epfl.ch/data-core#hasComponent> <http://www.w3.org/2000/01/rdf-schema#label> "hasComponent"@en .
+<http://vocab.dhlab.epfl.ch/data-core#hasComponent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#hasComponent"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://vocab.dhlab.epfl.ch/data-core#hasComponent> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.dhlab.epfl.ch/data-core#isComponentOf> .
+<http://vocab.dhlab.epfl.ch/data-core#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.dhlab.epfl.ch/data-core#hasMention> <http://www.w3.org/2000/01/rdf-schema#label> "hasMention"@en .
+<http://vocab.dhlab.epfl.ch/data-core#hasMention> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the mention which occur in a source."@en .
+<http://vocab.dhlab.epfl.ch/data-core#hasMention> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.dhlab.epfl.ch/data-core#Mention> .
+<http://vocab.dhlab.epfl.ch/data-core#hasMention> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.dhlab.epfl.ch/data-core#Source> .
+<http://vocab.dhlab.epfl.ch/data-core#hasMention> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.dhlab.epfl.ch/data-core#isMentionedIn> .
+<http://vocab.dhlab.epfl.ch/data-core#hasMention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.dhlab.epfl.ch/data-core#Entity> <http://www.w3.org/2004/02/skos/core#closeMatch> "http://dkm.fbk.eu/ontologies/knowledgestore#Entity"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://vocab.dhlab.epfl.ch/data-core#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity"@en .
+<http://vocab.dhlab.epfl.ch/data-core#Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "Cf. the 'KnowledgeStore Core Data Model ontology' definition \"Any identifiable entity in the domain of discourse, extracted from text and/or imported from some source of background knowledge.\""@en .
+<http://vocab.dhlab.epfl.ch/data-core#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.dhlab.epfl.ch/data-core#Mention> <http://www.w3.org/2004/02/skos/core#closeMatch> "http://dkm.fbk.eu/ontologies/knowledgestore#Mention"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://vocab.dhlab.epfl.ch/data-core#Mention> <http://www.w3.org/2000/01/rdf-schema#label> "Mention"@en .
+<http://vocab.dhlab.epfl.ch/data-core#Mention> <http://www.w3.org/2000/01/rdf-schema#comment> "Fragment of an information object (source) which refer to an entity."@en .
+<http://vocab.dhlab.epfl.ch/data-core#Mention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.dhlab.epfl.ch/data-core#isComponentOf> <http://www.w3.org/2000/01/rdf-schema#label> "isComponentOf"@en .
+<http://vocab.dhlab.epfl.ch/data-core#isComponentOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#isComponentOf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://vocab.dhlab.epfl.ch/data-core#isComponentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.dhlab.epfl.ch/data-core#Source> <http://www.w3.org/2000/01/rdf-schema#label> "Source"@en .
+<http://vocab.dhlab.epfl.ch/data-core#Source> <http://www.w3.org/2000/01/rdf-schema#comment> "An information object with a digital representation."@en .
+<http://vocab.dhlab.epfl.ch/data-core#Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.dhlab.epfl.ch/data-core#isMentionedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isMentionedIn"@en .
+<http://vocab.dhlab.epfl.ch/data-core#isMentionedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the source were a mention occurs."@en .
+<http://vocab.dhlab.epfl.ch/data-core#isMentionedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.dhlab.epfl.ch/data-core#Source> .
+<http://vocab.dhlab.epfl.ch/data-core#isMentionedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.dhlab.epfl.ch/data-core#Mention> .
+<http://vocab.dhlab.epfl.ch/data-core#isMentionedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.dhlab.epfl.ch/data-core#referredBy> <http://www.w3.org/2000/01/rdf-schema#label> "referredBy"@en .
+<http://vocab.dhlab.epfl.ch/data-core#referredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the mention an entity is referred by."@en .
+<http://vocab.dhlab.epfl.ch/data-core#referredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.dhlab.epfl.ch/data-core#Mention> .
+<http://vocab.dhlab.epfl.ch/data-core#referredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.dhlab.epfl.ch/data-core#Entity> .
+<http://vocab.dhlab.epfl.ch/data-core#referredBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.dhlab.epfl.ch/data-core#refersTo> .
+<http://vocab.dhlab.epfl.ch/data-core#referredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

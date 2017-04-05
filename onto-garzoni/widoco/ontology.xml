@@ -1,0 +1,909 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:grz="http://vocab.dhlab.epfl.ch/garzoni#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#relatedContract">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:rest rdf:nodeID="A1"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Country"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:oneOf rdf:nodeID="A3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#SingleSalary"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:nodeID="A6"/>
+    <rdf:first>weekly</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Condition">
+    <rdfs:label xml:lang="fr">Condition</rdfs:label>
+    <rdfs:label xml:lang="en">Condition</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Any condition or terms stated in a apprenticeship contract.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Other_(currency)">
+    <rdfs:label xml:lang="en">'Other_(currency)'</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#CurrencyType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#OtherSalary">
+    <rdfs:label xml:lang="en">OtherSalary</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialConditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#details">
+    <rdfs:label xml:lang="en">details</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to state additionnal details about whatever.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#City">
+    <rdfs:label xml:lang="en">City</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PlaceType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#PlaceType">
+    <rdfs:label xml:lang="en">PlaceType</rdfs:label>
+    <rdfs:comment xml:lang="en">The type of place.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Type"/>
+    <owl:equivalentClass rdf:nodeID="A7"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasWorkshop">
+    <rdfs:comment xml:lang="en">The relation between a PersonMention or PersonEntity and a Workshop.</rdfs:comment>
+    <owl:inverseOf rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#isWorkshopOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <owl:oneOf rdf:nodeID="A9"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:rest rdf:nodeID="A11"/>
+    <rdf:first>nobody</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent">
+    <rdfs:label xml:lang="fr">Composant d'appellation</rdfs:label>
+    <rdfs:label xml:lang="en">AppellationComponent</rdfs:label>
+    <rdfs:comment xml:lang="en">This class defines elements which compose the appellation, or name, of an entity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasProfession">
+    <rdfs:comment xml:lang="en">This property allows to state the profession of a PersonMention or PersonEntity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#OtherPayer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasGeographicalOrigin">
+    <rdfs:comment xml:lang="en">This property allows to specific the geographical origins of a PersonMention or PersonEntity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-core#Source">
+    <rdfs:label xml:lang="en">Source</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://vocab.dhlab.epfl.ch/data-core#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#RuralArea">
+    <rdfs:label xml:lang="en">RuralArea</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PlaceType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#id">
+    <rdfs:label xml:lang="en">id</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A13"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Region"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasMargin">
+    <rdfs:label xml:lang="en">hasMargin</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to state whether a contract, in the register where it is written, has a complementary note in the margin or not.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Contract"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:nodeID="A14"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Accommodation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first>whole period</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Apprenticeship">
+    <rdfs:label xml:lang="fr">Apprentissage</rdfs:label>
+    <rdfs:label xml:lang="en">Apprenticeship</rdfs:label>
+    <rdfs:comment xml:lang="en">An event which corresponds to the execution of an apprenticeship.</rdfs:comment>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#EventType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-core#Mention">
+    <rdfs:label xml:lang="en">Mention</rdfs:label>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://vocab.dhlab.epfl.ch/data-core#Mention</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <owl:allValuesFrom rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType"/>
+    <owl:onProperty rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#conditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Country">
+    <rdfs:label xml:lang="en">Country</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PlaceType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#PersonalCare">
+    <rdfs:label xml:lang="en">PersonalCare</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first>other</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasResidence">
+    <rdfs:comment xml:lang="en">This property allows to specify the residence of a PersonMention or PersonEntity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#SemestralPeriod">
+    <rdfs:label xml:lang="en">SemestralPeriod</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PeriodizationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <owl:oneOf rdf:nodeID="A17"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:nodeID="A18"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Apprenticeship"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <owl:oneOf rdf:nodeID="A19"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Collectivename">
+    <rdfs:label xml:lang="fr">Nom collectif</rdfs:label>
+    <rdfs:label xml:lang="en">Collectivename</rdfs:label>
+    <rdfs:comment xml:lang="en">In Garzoni context, this class covers expressions used to refer to collective entities. Typical examples include: "et fratelli" (and brothers), "e fioli", "et sua consorte" .</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#SingleSalary">
+    <rdfs:label xml:lang="en">SingleSalary</rdfs:label>
+    <rdfs:comment xml:lang="en">In a professional contractual setting, a fixed regular payment due by an employer to an employee.</rdfs:comment>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialConditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#oid">
+    <rdfs:label xml:lang="en">oid</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to state the object id of the mongo database (only valid for data coming from MediaWiki, should disappear.)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Contract"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#period">
+    <rdfs:label xml:lang="en">period</rdfs:label>
+    <rdfs:comment xml:lang="en">The period during which something happens.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingCondition"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni">
+    <rdfs:label xml:lang="en">Garzoni Ontology</rdfs:label>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</owl:versionInfo>
+    <rdfs:comment xml:lang="en">An ontology which models the information contained in the archival series "Accordi dei Garzoni" of the Venetian State Archives, relative to early modern venetian apprenticeship domain.</rdfs:comment>
+    <owl:versionIRI rdf:resource="http://vocab.dhlab.epfl.ch/garzoni"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <rdf:rest rdf:nodeID="A21"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#WeeklyPeriod"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <owl:oneOf rdf:nodeID="A23"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/data-core#Entity">
+    <rdfs:label xml:lang="en">Entity</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#MasterPayer">
+    <rdfs:label xml:lang="en">MasterPayer</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PayerType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:nodeID="A25"/>
+    <rdf:first>none</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Patronymic1">
+    <rdfs:label xml:lang="fr">Patronyme1</rdfs:label>
+    <rdfs:label xml:lang="en">Patronym1</rdfs:label>
+    <rdfs:comment xml:lang="en">Part of the name of a person which refers to one of his/her immediate relative. In (former) Italian family names, the patronymic is preceded by the word "di" or "quondam", e.g. "Federico Di Garla".
+"Di" stands for "figlio/figlia di" or "marito/moglie di" meaning the son/daughter or husband/wife of a living person. "Quondam" means the same but for a person who ceased to live.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#onMultiplePages">
+    <rdfs:label xml:lang="en">onMultiplePages</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to state whether a contract spans over 2 pages or not.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Contract"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#PayerType">
+    <rdfs:label xml:lang="en">PayerType</rdfs:label>
+    <rdfs:comment xml:lang="en">The type of payer; in garzoni context, this is used to specify who is paying the apprenticeship: the apperntice to the master (emphasize on training), or the master to the apprentice (emphasize on employing).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Type"/>
+    <owl:equivalentClass rdf:nodeID="A26"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Workshop">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Workshop
+</rdfs:label>
+    <rdfs:label xml:lang="fr">Atelier</rdfs:label>
+    <rdfs:comment xml:lang="en">The place where objects are crafted or manufactured. In garzoni context, the place were the training of the apprentice was taking place.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasNextPart">
+    <rdfs:comment xml:lang="en">This property allows to relate the different parts of a contract spanning over 2 pages.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#ProgressiveSalary">
+    <rdfs:label xml:lang="en">ProgressiveSalary</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialConditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#EventType">
+    <rdfs:label xml:lang="en">EventType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/EventType"/>
+    <rdfs:comment xml:lang="en">The type of event.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Type"/>
+    <owl:equivalentClass rdf:nodeID="A8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#conditionType">
+    <rdfs:comment xml:lang="en">This property allows to state the specific type of a  financial or hosting condition.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Condition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <rdf:rest rdf:nodeID="A28"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Master"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <rdf:rest rdf:nodeID="A30"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#ApprenticePayer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#professionCategory">
+    <rdfs:label xml:lang="en">professionCategory</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#ProfessionMention"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <rdf:rest rdf:nodeID="A32"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Soldi"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <rdf:rest rdf:nodeID="A34"/>
+    <rdf:first>apprentice</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#WeeklyPeriod">
+    <rdfs:label xml:lang="en">WeeklyPeriod</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PeriodizationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasCondition">
+    <rdfs:label xml:lang="en">This property allows to assign a condition to a garzoni contract.</rdfs:label>
+    <rdfs:range rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Condition"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Contract"/>
+    <owl:inverseOf rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#isConditionOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#ageText">
+    <rdfs:label xml:lang="en">ageText</rdfs:label>
+    <rdfs:comment xml:lang="en">To be deleted, only in MediaWiki</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Enrolment">
+    <rdfs:label xml:lang="fr">Inscription</rdfs:label>
+    <rdfs:label xml:lang="en">Enrolment</rdfs:label>
+    <rdfs:comment xml:lang="en">An event which corresponds to the enrolment of an apprenticship. In the Garzoni project, it corresponds to the registration of the contract at the institution of the Giustizia Vecchia.</rdfs:comment>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#EventType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Master">
+    <rdfs:label xml:lang="en">Master</rdfs:label>
+    <rdfs:comment xml:lang="en">A role or function which a person has while being a master duting an apprenticship.</rdfs:comment>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#RoleType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#ApprenticePayer">
+    <rdfs:label xml:lang="en">ApprenticePayer</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PayerType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasName">
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#P1</rdfs:seeAlso>
+    <rdfs:label xml:lang="en">hasName</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">This property is used to attribute a PersonAppellation to a PersonMention or a PersonEntity.</rdfs:comment>
+    <rdfs:range rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PersonAppellation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:rest rdf:nodeID="A0"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#City"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#WholePeriod"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <rdf:rest rdf:nodeID="A4"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Pledge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#ApplicationRule">
+    <rdfs:label xml:lang="en">ApplicationRule</rdfs:label>
+    <rdfs:comment xml:lang="en">The definition of the conditions under which a rule applies.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Type"/>
+    <owl:equivalentClass rdf:nodeID="A35"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <rdf:rest rdf:nodeID="A5"/>
+    <rdf:first>semestral</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Patronymic2">
+    <rdfs:label xml:lang="fr">Patronymic2</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Part of the name of a person which refers to one of his/her relative. In (former) Italian family names, the patronymic is preceded by the word "di" or "quondam", e.g. "Federico Di Garla".
+"Di" stands for "figlio/figlia di" or "marito/moglie di" meaning the son/daughter or husband/wife of a living person. "Quondam" means the same but for a person who ceased to live.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Surname">
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://xmlns.com/foaf/0.1/familyName</rdfs:seeAlso>
+    <rdfs:label xml:lang="en">Surname</rdfs:label>
+    <rdfs:label xml:lang="fr">Nom de famille</rdfs:label>
+    <rdfs:comment xml:lang="en">The surname or family name of a person entity.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#site">
+    <rdfs:label xml:lang="en">site</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to state a complementary information relative to the location of a worshop.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#SanoApplication">
+    <rdfs:label xml:lang="en">SanoApplication</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#ApplicationRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#OtherPayer">
+    <rdfs:label xml:lang="en">OtherPayer</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PayerType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Charge">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charge
+</rdfs:label>
+    <rdfs:comment xml:lang="en">A public responsibility hold by a person, usually different from his/her profession.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <rdf:rest rdf:nodeID="A12"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#MasterPayer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Other_(currency)"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <rdf:rest rdf:nodeID="A10"/>
+    <rdf:first>master</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#currencyUnit">
+    <rdfs:label xml:lang="en">currencyUnit</rdfs:label>
+    <rdfs:comment xml:lang="en">To be deleted when harmonization with Wiki fully done.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Other"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#worksFor">
+    <rdfs:label xml:lang="en">worksFor</rdfs:label>
+    <rdfs:comment xml:lang="en">This allow to state an additional information related to a ProfessionMention.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#applicationRule">
+    <rdfs:label xml:lang="en">applicationRule</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to state the condition under which a rule is applied.</rdfs:comment>
+    <rdfs:range rdf:nodeID="A36"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#totalAmount">
+    <rdfs:label xml:lang="en">totalAmount</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#FinancialConditionType">
+    <rdfs:label xml:lang="en">FinancialConditionType.</rdfs:label>
+    <rdfs:comment xml:lang="en">The type of financial condition.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Type"/>
+    <owl:equivalentClass rdf:nodeID="A22"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <rdf:rest rdf:nodeID="A38"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Ducati"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first>sano et infermo</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Ducati">
+    <rdfs:label xml:lang="en">Ducati</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#CurrencyType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#MonthlyPeriod">
+    <rdfs:label xml:lang="en">MonthlyPeriod</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PeriodizationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <rdf:rest rdf:nodeID="A41"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#MonthlyPeriod"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A42">
+    <rdf:rest rdf:nodeID="A43"/>
+    <rdf:first>none</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#DailyPeriod">
+    <rdfs:label xml:lang="en">DailyPeriod</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PeriodizationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Forename">
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://xmlns.com/foaf/0.1/givenName</rdfs:seeAlso>
+    <rdfs:label xml:lang="fr">Prénom</rdfs:label>
+    <rdfs:label xml:lang="en">Firstname</rdfs:label>
+    <rdfs:comment xml:lang="en">The firstname of a person.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Apprentice">
+    <rdfs:label xml:lang="en">Apprentice</rdfs:label>
+    <rdfs:comment xml:lang="en">A role or function which a person has when being enrolled as apprentice during an apprenticeship.</rdfs:comment>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#RoleType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#quondam1">
+    <rdfs:label xml:lang="en">quondam1</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to state the status of the first quondam information in an Appellation. If 'di', then false, otherwise true.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PersonAppellation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <rdf:rest rdf:nodeID="A40"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#DailyPeriod"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#clothingType">
+    <rdfs:label xml:lang="en">clothingType</rdfs:label>
+    <rdfs:comment xml:lang="en">An indication on the type of clothes which is being paid to an apprentice.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Soldi">
+    <rdfs:label xml:lang="en">Soldi</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#CurrencyType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#isWorkshopOf">
+    <rdfs:label xml:lang="en">isWorkshopOf</rdfs:label>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A45">
+    <rdf:rest rdf:nodeID="A46"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Apprentice"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A47">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PersonalCare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasCharge">
+    <rdfs:label xml:lang="en">This property allows to assign a charge to a PersonMention or a PersonEntity.</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A48">
+    <rdf:rest rdf:nodeID="A49"/>
+    <rdf:first>daily</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Profession">
+    <rdfs:label xml:lang="fr">Profession</rdfs:label>
+    <rdfs:label xml:lang="en">Profession</rdfs:label>
+    <rdfs:comment xml:lang="en">Activity in which someone is skilled and which is carries out in order to make a living. Occupation.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A50">
+    <owl:oneOf rdf:nodeID="A33"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#HostingCondition">
+    <rdfs:label xml:lang="en">HostingCondition</rdfs:label>
+    <rdfs:comment xml:lang="en">The contract's terms relative to hosting, i.e. some benefit in kind.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Condition"/>
+    <owl:equivalentClass rdf:nodeID="A15"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasRole">
+    <rdfs:isDefinedBy xml:lang="en">This property specifies the role of a PersonMention or PersonEntity.</rdfs:isDefinedBy>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#mediaWikiReference">
+    <rdfs:label xml:lang="en">mediaWikiReference</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to link a contract to its corresponding object contract in the former MediaWiki database.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#paidInGoods">
+    <rdfs:label xml:lang="en">paidInGoods</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingCondition"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <rdf:rest rdf:nodeID="A20"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#SemestralPeriod"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A51">
+    <owl:allValuesFrom rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialConditionType"/>
+    <owl:onProperty rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#conditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <rdf:rest rdf:nodeID="A39"/>
+    <rdf:first>sano</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#quondam2">
+    <rdfs:label xml:lang="en">quondam2</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to state the status of the second quondam information in an Appellation.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PersonAppellation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#denunciationDate">
+    <rdfs:label xml:lang="en">denunciationDate</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to state at which date a flee has been denounced.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A52">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Flee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Other">
+    <rdfs:label xml:lang="en">Other</rdfs:label>
+    <rdfs:comment xml:lang="en">An undetermined role or function taht a person has.</rdfs:comment>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#RoleType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#SanoInfermoApplication">
+    <rdfs:label xml:lang="en">SanoInfermoApplication</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#ApplicationRule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <rdf:rest rdf:nodeID="A27"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Guarantor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <owl:oneOf rdf:nodeID="A29"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <rdf:rest rdf:nodeID="A31"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Lire"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A49">
+    <rdf:rest rdf:nodeID="A24"/>
+    <rdf:first>monthly</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#GenericExpenses">
+    <rdfs:label xml:lang="en">GenericExpenses</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#identifiedPerson">
+    <rdfs:label xml:lang="en">identifiedPerson</rdfs:label>
+    <rdfs:comment xml:lang="en">To be deleted, only in MediaWiki.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://semanticweb.cs.vu.nl/2009/11/sem/Type">
+    <rdfs:label xml:lang="en">Type</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Type"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#RuralArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:rest rdf:nodeID="A53"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Clothing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#PeriodizationType">
+    <rdfs:label xml:lang="en">PeriodizationType</rdfs:label>
+    <rdfs:comment xml:lang="en">The type of periodization; in garzoni context, this is used to specify at which intervals the salary is paid.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Type"/>
+    <owl:equivalentClass rdf:nodeID="A16"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A54">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#SanoInfermoApplication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention">
+    <rdfs:label xml:lang="en">WorkshopMention</rdfs:label>
+    <rdfs:comment xml:lang="en">The mention of a workshop.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Pledge">
+    <rdfs:label xml:lang="en">Pledge</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialConditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#PersonAppellation">
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#E41</rdfs:seeAlso>
+    <rdfs:label xml:lang="en">PersonAppellation</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The name of a person entity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <owl:oneOf rdf:nodeID="A55"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#ProfessionMention">
+    <rdfs:label xml:lang="en">ProfessionMention</rdfs:label>
+    <rdfs:comment xml:lang="en">The mention of the profession of a person.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Lire">
+    <rdfs:label xml:lang="en">Lire</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#CurrencyType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#moneyInformation">
+    <rdfs:label xml:lang="en">moneyInformation</rdfs:label>
+    <rdfs:comment xml:lang="en">Additional information about money, if necessary.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Flee">
+    <rdfs:label xml:lang="fr">Fugue</rdfs:label>
+    <rdfs:label xml:lang="en">Flee</rdfs:label>
+    <rdfs:comment xml:lang="en">An event which corresponds to the flee of an apprentice during its apprenticeship.</rdfs:comment>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#EventType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Accommodation">
+    <rdfs:label xml:lang="en">Accommodation</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#BreachOfContract">
+    <rdfs:label xml:lang="fr">Rupture de contrat</rdfs:label>
+    <rdfs:label xml:lang="en">BreachofContract</rdfs:label>
+    <rdfs:comment xml:lang="en">An event which corresponds to the breaking of a contract.</rdfs:comment>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#EventType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#paidBy">
+    <rdfs:label xml:lang="en">paidBy</rdfs:label>
+    <rdfs:range rdf:nodeID="A50"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingCondition"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#RoleType">
+    <rdfs:label xml:lang="en">RoleType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/RoleType"/>
+    <rdfs:comment xml:lang="en">The type of role.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Type"/>
+    <owl:equivalentClass rdf:nodeID="A56"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Clothing">
+    <rdfs:label xml:lang="en">Clothing</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Contract">
+    <rdfs:label xml:lang="fr">Contrat</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contract</rdfs:label>
+    <rdfs:comment xml:lang="en">A legal agreement between parties that set up the conditions of an employment. In the Garzoni project, this corresponds to an apprenticeship contract between a master and an apprentice with, often, the caution of a guarantor.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Source"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:rest rdf:nodeID="A57"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#BreachOfContract"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#isNextPartOf">
+    <rdfs:label xml:lang="en">isNextPartOf</rdfs:label>
+    <rdfs:range rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Contract"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Contract"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A58">
+    <owl:oneOf rdf:nodeID="A59"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#ChargeMention">
+    <rdfs:label xml:lang="en">ChargeMention</rdfs:label>
+    <rdfs:comment xml:lang="en">The mention of a Charge.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Mention"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#periodization">
+    <rdfs:label xml:lang="en">Periodization</rdfs:label>
+    <rdfs:comment xml:lang="en">The regular time period at which something happens.</rdfs:comment>
+    <rdfs:range rdf:nodeID="A58"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#HostingCondition"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A53">
+    <rdf:rest rdf:nodeID="A47"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#GenericExpenses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A60">
+    <owl:oneOf rdf:nodeID="A37"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#placeType">
+    <rdfs:label xml:lang="en">placeType</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType">
+    <rdfs:label xml:lang="en">HostingConditionType</rdfs:label>
+    <rdfs:comment xml:lang="en">The type of hosting condition.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Type"/>
+    <owl:equivalentClass rdf:nodeID="A2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Region">
+    <rdfs:label xml:lang="en">Region</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PlaceType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Guarantor">
+    <rdfs:label xml:lang="en">Guarantor</rdfs:label>
+    <rdfs:comment xml:lang="en">A role or function that a person has while being a guarantor in the context of an apprenticeship.</rdfs:comment>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#RoleType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#insigna">
+    <rdfs:label xml:lang="en">insigna</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to state the emblem or 'name' of a workshop.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition">
+    <rdfs:label xml:lang="en">FinancialCondition</rdfs:label>
+    <rdfs:comment xml:lang="en">The financial terms of a contract.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Condition"/>
+    <owl:equivalentClass rdf:nodeID="A51"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A55">
+    <rdf:rest rdf:nodeID="A54"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#SanoApplication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <owl:oneOf rdf:nodeID="A42"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#partialAmount">
+    <rdfs:label xml:lang="en">partialAmount</rdfs:label>
+    <rdfs:comment xml:lang="en">The partial amount of a progressive salary.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#isConditionOf">
+    <rdfs:label xml:lang="en">isConditionOf</rdfs:label>
+    <rdfs:range rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Contract"/>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Condition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#WholePeriod">
+    <rdfs:label xml:lang="en">WholePeriod</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PeriodizationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasLocation">
+    <rdfs:label xml:lang="en">hasLocation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/place.owl"/>
+    <rdfs:comment>This property allows to specify the location of an entity</rdfs:comment>
+    <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <rdf:rest rdf:nodeID="A44"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#AnnualPeriod"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#CurrencyType">
+    <rdfs:label xml:lang="en">CurrencyType</rdfs:label>
+    <rdfs:comment xml:lang="en">The type of currency.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://semanticweb.cs.vu.nl/2009/11/sem/Type"/>
+    <owl:equivalentClass rdf:nodeID="A60"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A56">
+    <owl:oneOf rdf:nodeID="A45"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.dhlab.epfl.ch/garzoni#AnnualPeriod">
+    <rdfs:label xml:lang="en">AnnualPeriod</rdfs:label>
+    <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#PeriodizationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A57">
+    <rdf:rest rdf:nodeID="A52"/>
+    <rdf:first rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Enrolment"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A59">
+    <rdf:rest rdf:nodeID="A48"/>
+    <rdf:first>annual</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+</rdf:RDF>

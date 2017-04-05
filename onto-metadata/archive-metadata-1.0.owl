@@ -1,14 +1,17 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.dhlab.epfl.ch/vtm-archive#"
-     xml:base="http://vocab.dhlab.epfl.ch/vtm-archive"
+<rdf:RDF xmlns="http://vocab.dhlab.epfl.ch/archive-metadata#"
+     xml:base="http://vocab.dhlab.epfl.ch/archive-metadata"
      xmlns:vtm-arch="http://vocab.dhlab.epfl.ch/vtm-archive/1.0#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:meta="http://vocab.dhlab.epfl.ch/archive-metadata#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata">
         <owl:versionIRI rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata/1.0"/>
+        <rdfs:comment xml:lang="en">A embryon of vocabulary to represent archival metadata information. This vocabulary will be replaced by a professional standard, we think of the Record in Context Conceptual Model, which specification should come soon.</rdfs:comment>
+        <rdfs:label xml:lang="en">Archive Metadata Model</rdfs:label>
     </owl:Ontology>
     
 
@@ -26,37 +29,49 @@
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#hasArchivalSignature -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#hasArchivalSignature"/>
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#hasArchivalSignature">
+        <rdfs:label xml:lang="en">hasArchivalSignature</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#hasPage -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#hasPage"/>
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#hasPage">
+        <rdfs:label xml:lang="en">hasPage</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#isImageOf -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#isImageOf"/>
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#isImageOf">
+        <rdfs:label xml:lang="en">isImageOf</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#isImagedBy -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#isImagedBy"/>
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#isImagedBy">
+        <rdfs:label xml:lang="en">isImagedBy</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#isPageOf -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#isPageOf"/>
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#isPageOf">
+        <rdfs:label xml:lang="en">isPageOf</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#onPage -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#onPage"/>
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#onPage">
+        <rdfs:label xml:lang="en">onPage</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -73,19 +88,25 @@
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#archivalHolder -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#archivalHolder"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#archivalHolder">
+        <rdfs:label xml:lang="en">archivalHolder</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#box -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#box"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#box">
+        <rdfs:label xml:lang="en">box</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#fund -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#fund"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#fund">
+        <rdfs:label xml:lang="en">fund</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -93,19 +114,24 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#number">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">number</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#pageSide -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#pageSide"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#pageSide">
+        <rdfs:label xml:lang="en">pageSide</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#series -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#series"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#series">
+        <rdfs:label xml:lang="en">series</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -124,25 +150,32 @@
 
     <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalHolder">
         <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+        <rdfs:label xml:lang="en">ArchivalHolder</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalSignature -->
 
-    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalSignature"/>
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalSignature">
+        <rdfs:label xml:lang="en">ArchivalSignature</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalSignatureComponent -->
 
-    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalSignatureComponent"/>
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalSignatureComponent">
+        <rdfs:label xml:lang="en">ArchivalSignatureComponent</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit -->
 
-    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit">
+        <rdfs:label xml:lang="en">ArchivalUnit</rdfs:label>
+    </owl:Class>
     
 
 
@@ -150,6 +183,7 @@
 
     <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Box">
         <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+        <rdfs:label xml:lang="en">Box</rdfs:label>
     </owl:Class>
     
 
@@ -158,6 +192,7 @@
 
     <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Fund">
         <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+        <rdfs:label xml:lang="en">Fund</rdfs:label>
     </owl:Class>
     
 
@@ -166,6 +201,7 @@
 
     <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Page">
         <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+        <rdfs:label xml:lang="en">Page</rdfs:label>
     </owl:Class>
     
 
@@ -174,14 +210,16 @@
 
     <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Register">
         <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+        <rdfs:label xml:lang="en">Register</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#Serie -->
+    <!-- http://vocab.dhlab.epfl.ch/archive-metadata#Series -->
 
-    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Serie">
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/archive-metadata#Series">
         <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/archive-metadata#ArchivalUnit"/>
+        <rdfs:label xml:lang="en">Series</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

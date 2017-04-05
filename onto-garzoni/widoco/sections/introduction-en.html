@@ -1,0 +1,88 @@
+<h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>The <i>garzoni</i> ontology describes the specific domain of interest of the archival document series <i>Accordi dei Garzoni</i>, kept at the <a href= "http://www.archiviodistatovenezia.it/siasve/cgi-bin/pagina.pl?Lingua=en"> State Archives of Venice</a>. </p>
+<p> This document series contains about 55.000 apprenticeship contracts declared by guilds of various professions over an almost continuous two-century period (1575-1772). The working arrangements contained therein represent an important source of information to better understand the driving forces of pre-modern economy, the transmission of skills, educational patterns and, in the case of Venice, artistic education. Extracted information 	&mdash; at an unprecedented scale in the domain of apprenticeship 	&mdash; will support enquiries such as who was working where, for how long and how much, how workshops were organized and distributed over the city, which professions were taught and where apprentices were coming from. </p>
+<p>
+
+<div id="accordideigarzoni">
+<h3 id="ns" class="list">The <i>Accordi dei Garzoni</i></h3>
+Recorded over 32 registers by various different hands, apprenticeship contracts report information in an extremely regular manner (it was administrative documents). This is of particular benefit for the task of data modeling, and the present ontology naturally reflects the pieces of information present in the contracts, that is to say:
+ <ul>
+ 	<li>the identity of the involved persons, with the Apprentice, the Master, and potentially a Guarantor. Various information such as age, profession, residence or the geographical origins of persons are often mentioned. </li>
+ 	<li> the profession to be taught and the workshop where the learning takes place. </li>
+ 	<li> the diverse terms of the contracts, including: financial conditions (salary and pledge), hosting conditions (whether the master was offering the accommodation to the apprentice, or other advantages), and temporal conditions, with contract's starting date and duration.</li>
+</ul>
+</p>
+</div>
+
+
+<div id="keymodeling" class="div3">
+<h3 id="ns" class="list">Key modeling aspects</h3>
+
+	<div id="integratedModel">
+	<h4 id="ns" class="list">1.2.1 An integrated model</h4>
+	<p>
+	The <i>garzoni</i> ontology is not monolithic but builds on two ontologies and re-use other vocabularies.
+	</p>
+	<p>
+	The two ontologies (or vocabularies) named <i>core data model ontology</i> and <i>common data model ontology</i> are base vocabularies which are also used in similar projects dealing with archival material from the State Archive of Venice:
+	</p>
+	<ul>
+		<li>The <i>Core Data Model Ontology</i> consists of 3 main classes defining a <b>Source</b> (a document, a painting, a map) which mentions <b>Mentions</b>, which refer to <b>Entities</b>.
+		<p>For further information on this ontology please visit: <a href="http://vocab.dhlab.epfl.ch/data-core">http://vocab.dhlab.epfl.ch/data-core</a>.</p>
+		</li>
+
+		<li>The <i>Common Data Model Ontology</i> builds on the <i>Core Data Model</i> and defines sub-classes (e.g. Person, Place) which are common to various projects.
+		<p>For further information on this ontology please visit:  <a href="http://vocab.dhlab.epfl.ch/data-common">http://vocab.dhlab.epfl.ch/data-common</a>.</p>
+		</li>
+	 </ul>
+	The definition and organisation of these vocabularies is designed to be flexible and modular so as to ensure data integration from different but related projects.
+
+	<p>
+	Additionally, the representation of garzoni data makes use of other vocabularies:
+	<ul>
+		<li> the <a href="https://www.w3.org/TR/annotation-model/">Web Annotation Data Model</a> to represent provenance (cf. Section 1.2.2 below);
+		</li>
+		<li> the <a href="http://semanticweb.cs.vu.nl/2009/11/sem/">Simple Event Model Ontology</a> to represent event entity and their properties;
+		</li>
+		<li> An <a href="http://vocab.dhlab.epfl.ch/archive-metadata">archival metadata model</a>, which temporarily defines a few elements, waiting for the validation of the <a href="http://www.ica.org/en/egad-ric-conceptual-model">Records in Contexts Conceptual Model</a>;
+		</li>
+		<li> the <a href="http://vocab.dhlab.epfl.ch/dhcanvas">DHCanvas Annotation Model</a>, that is to say some elements of the Annotation Model of the annotation tool with which the garzoni data is produced (cf. Section 1.2.2 below);
+		</li>
+		<li> vocabulary elements from the the <a href="http://iiif.io/api/presentation/2.1/">IIIF presentation API</a> (which integrates elements from the <a href="http://iiif.io/model/shared-canvas/1.0/"> Shared Canvas Data Model</a>).
+		</li>
+	 </ul>
+	</p>
+	</div>
+
+	<div id="annnotationProcess">
+	<h4 id="ns" class="list">1.2.2 The result of an annotation process</h4>
+	<p>
+	 The <i>garzoni</i> ontology is used to represent data manually acquired via a dedicated transcription and annotation web interface, named <i>DHCanvas</i>. The internal annotation model of this application makes use of IIIF Image and Presentation APIs, and of the Web Annotation Data Model. In this frame, each annotated entity (or object) is the oa:Body of a oa:Annotation, which targets either image segments or other entities. Annotation are characterized with motivation and creation process information. In this context, the acquired data, encoded according to <i>garzoni</i> ontology, are naturally "wrapped" by annotations detailing their provenance. This information is not part, sensu stricto, of the <i>Garzoni Data Model Ontology</i>, but is an integral part of the <i>garzoni</i> data-set.
+	 </p>
+	</div>
+
+</div>
+<p>
+
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespaces</h3>
+
+<p>The namespace of the <i>garzoni</i> ontology is <span style="color:blue">http://vocab.dhlab.epfl.ch/garzoni#</span>, for which we use the prefix <span style="color:blue">grz-owl</span>. Namespaces of other vocabularies used to represent <i>garzoni</i> data are reported in the table below (alphabetical order).
+</p>
+
+<div id="ns" align="center">
+<table>
+<tbody>
+<tr><td><b>common</b></td><td>&lt;http://vocab.dhlab.epfl.ch/data-common#&gt;</td></tr>
+<tr><td><b>core</b></td><td>&lt;http://vocab.dhlab.epfl.ch/data-core#&gt;</td></tr>
+<tr><td><b>grz-owl</b></td><td>&lt;http://vocab.dhlab.epfl.ch/garzoni#&gt;</td></tr>
+<tr><td><b>oa</b></td><td>&lt;http://www.w3.org/ns/oa#&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>sem</b></td><td>&lt;http://semanticweb.cs.vu.nl/2009/11/sem/&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
