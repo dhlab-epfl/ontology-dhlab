@@ -1074,6 +1074,7 @@
     <owl:NamedIndividual rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Ducati">
         <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#CurrencyType"/>
         <rdfs:label xml:lang="en">Ducati</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://it.dbpedia.org/resource/Ducato_(moneta)"/>
     </owl:NamedIndividual>
     
 
@@ -1124,6 +1125,7 @@
     <owl:NamedIndividual rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Lire">
         <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#CurrencyType"/>
         <rdfs:label xml:lang="en">Lire</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/page/Lira"/>
     </owl:NamedIndividual>
     
 
@@ -1271,6 +1273,7 @@
     <owl:NamedIndividual rdf:about="http://vocab.dhlab.epfl.ch/garzoni#Soldi">
         <rdf:type rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#CurrencyType"/>
         <rdfs:label xml:lang="en">Soldi</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/page/Soldo"/>
     </owl:NamedIndividual>
     
 
