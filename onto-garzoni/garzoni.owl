@@ -41,7 +41,8 @@
     <!-- http://vocab.dhlab.epfl.ch/garzoni#hasCharge -->
 
     <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/garzoni#hasCharge">
-        <rdfs:label xml:lang="en">This property allows to assign a charge to a PersonMention or a PersonEntity.</rdfs:label>
+        <rdfs:comment>This property allows to assign a charge to a PersonMention or a PersonEntity.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCharge</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -52,7 +53,8 @@
         <owl:inverseOf rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#isConditionOf"/>
         <rdfs:domain rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Contract"/>
         <rdfs:range rdf:resource="http://vocab.dhlab.epfl.ch/garzoni#Condition"/>
-        <rdfs:label xml:lang="en">This property allows to assign a condition to a garzoni contract.</rdfs:label>
+        <rdfs:comment>This property allows to assign a condition to a garzoni contract.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCondition</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -519,6 +521,12 @@
         <rdfs:comment xml:lang="en">This property allows to state a complementary information relative to the location of a worshop.</rdfs:comment>
         <rdfs:label xml:lang="en">site</rdfs:label>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/garzoni#suggestedProfessionCategory -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/garzoni#suggestedProfessionCategory"/>
     
 
 
