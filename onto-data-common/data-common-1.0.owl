@@ -40,6 +40,7 @@
 
     <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#hasApprentice">
         <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith"/>
+        <owl:inverseOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#isApprenticeOf"/>
         <rdfs:label xml:lang="en">hasApprentice</rdfs:label>
     </owl:ObjectProperty>
     
@@ -77,15 +78,6 @@
     <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#hasGuarantor">
         <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith"/>
         <rdfs:label xml:lang="en">hasGuarantor</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.dhlab.epfl.ch/data-common#hasMaster -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#hasMaster">
-        <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasBusinessRelationshipWith"/>
-        <rdfs:label xml:lang="en">hasMaster</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -376,6 +368,14 @@
     
 
 
+    <!-- http://vocab.dhlab.epfl.ch/data-common#isNieceOf -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#isNieceOf">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.dhlab.epfl.ch/data-common#isPartnerOf -->
 
     <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#isPartnerOf">
@@ -417,6 +417,14 @@
     <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#isSonOf">
         <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
         <rdfs:label xml:lang="en">isSonOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#isStepdaughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#isStepdaughterOf">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
     </owl:ObjectProperty>
     
 
@@ -466,6 +474,14 @@
     
 
 
+    <!-- http://vocab.dhlab.epfl.ch/data-common#isWidowerOf -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#isWidowerOf">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.dhlab.epfl.ch/data-common#hasFamilyRelationshipWith"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.dhlab.epfl.ch/data-common#isWifeOf -->
 
     <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#isWifeOf">
@@ -511,6 +527,12 @@
     
 
 
+    <!-- http://vocab.dhlab.epfl.ch/data-common#suggestedStandardForm -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#suggestedStandardForm"/>
+    
+
+
     <!-- http://vocab.dhlab.epfl.ch/data-common#transcript -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.dhlab.epfl.ch/data-common#transcript">
@@ -528,6 +550,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/data-common#Event -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/data-common#Event">
+        <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/data-core#Entity"/>
+    </owl:Class>
     
 
 
